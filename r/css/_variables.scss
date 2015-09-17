@@ -1,0 +1,10 @@
+$color-tint: #fff;
+
+$color-tint-contrast-min: if(lightness($color-tint) < 80%, white, darken($color-tint, 75%));
+$color-tint-contrast-max: if(lightness($color-tint) < 35%, white, darken($color-tint, 100%));
+
+$type-l: 1.5em;
+$site-max-width: 1300px;
+
+$tablet-width: 700px;
+$desktop-width: 1030px;

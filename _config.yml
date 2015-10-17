@@ -1,2 +1,14 @@
 sass:
     sass_dir: r/css/_sass
+
+collections:
+  projects:
+    output: true
+    permalink: /work/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "project"

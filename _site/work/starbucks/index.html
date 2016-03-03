@@ -11,16 +11,29 @@
 	<title>Joe Shoop—Starbucks</title>
 
 	<style>
+
+	body {
+		background: #000;
+		color: #fff;
+	}
+
 	.project-header, header {
 		background: #000;
 		color: #fff;
 	}
 
 	
+
+	.next a:hover {
+		color:  ;
+	}
 	</style>
 </head>
 
-<header>
+<body>
+<div id="main" class="m-scene">
+
+	<header>
 	<div class="wrap">
 		<div class="grid grid-align-middle">
 			<div class="col">
@@ -41,18 +54,21 @@
 	</div>
 </header>
 
-<body>
-
-<section class="content">
-	<div class="project-header grid">
-	<div class="col">
-		<div class="wrap">
-			<h2>Starbucks </h2>
-			<span class="text-small">Illustration, Interface Design</span>
+	<section class="content scene-element">
+		<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>Starbucks </h2>
+				<span class="text-small">Illustration, Interface Design</span>
+			</div>
 		</div>
 	</div>
+	<div class="pusher">
+	</div>
 </div>
-<div class="square grid">
+<div class="project-content">
+	<div class="square grid">
 	<div class="knockout col" style="background-color:#316239; background-image:url(/projects/starbucks/starbucks-icon-passport03.svg)">
 	</div>
 	<div class="knockout col" style="background-color:#D4BBA7; background-image:url(/projects/starbucks/starbucks-icon-passport02.svg)">
@@ -64,7 +80,19 @@
 	</div>
 </div>
 
-<div class="wrap">
+<section class="copy">
+	<p><em>Starbucks</em> wanted to update the photobooth in their Times Square store with a simplified custom solution.</p>
+
+	<p>After the project was completed, 400% more poeople were using it.</p>
+</section>
+
+<section class="copy">
+	<p><em>Starbucks</em> was working on a new site called 'Coffee Passport', which allows partners to keep a journal on their coffee tasting, and unlock stamps as they try new roasts.</p>
+
+	<p>I designed a few of the stamps, as well as the app icon.</p>
+</section>
+
+<!-- <div class="wrap">
 
 <ul>
 	<li>Touch Screen Photo Booth</li>
@@ -73,8 +101,7 @@
 	<li>Passport App icons</li>
 </ul>
 
-<p>My work increased conversion by 400%, to 130 people sending an email per day.</p>
-
+</div> -->
 </div>
 
 
@@ -83,21 +110,15 @@
   
 
   
+
   
 
   
+
   
 
   
-  
 
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -107,17 +128,21 @@
 
     	
 
-  		
-    	
-
-  
   
 
   
-  
 
 
 
+<style>
+.next.clicked {
+  background: #fff;
+  color: #000;
+}
+.next.clicked a h2 {
+  color: #cc0000 ;
+}
+</style>
 <section class="next">
 	<a href="/work/target/">
 		<div class="wrap">
@@ -132,9 +157,9 @@
 </section>
 
 
-</section>
+	</section>
 
-<footer class="footer">
+	<footer class="footer">
 	<div class="wrap">
 		<div class="grid">
 			<div class="col">
@@ -155,6 +180,6 @@
 	</div>
 </footer>
 
+</div>
 </body>
-
 </html>

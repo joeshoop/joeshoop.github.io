@@ -98,6 +98,23 @@ table {
 .grid-reverse .col {
   direction: ltr; }
 
+#main {
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-duration: 1s; }
+
+.is-exiting .project-content, .is-exiting header {
+  animation-direction: reverse; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.is-exiting .next {
+  min-height: 100vh; }
+
 /*! Typebase.scss v0.1.0 | MIT License */
 /* Setup */
 html {
@@ -211,11 +228,11 @@ th {
 code {
   vertical-align: bottom; }
 
-.lead {
+.copy {
   font-size: 1rem;
   line-height: 1.4rem; }
   @media (min-width: 62rem) {
-    .lead {
+    .copy {
       font-size: 1.25rem;
       line-height: 1.4rem; } }
 
@@ -267,6 +284,10 @@ nav {
     nav li.current a {
       border-bottom: 2px solid #F1BA05; }
 
+.project-content {
+  background: white;
+  color: black; }
+
 header a, footer nav a {
   color: currentColor;
   opacity: .4; }
@@ -299,45 +320,51 @@ Project Page
   color: white;
   min-height: 50vw; }
 
-.lead {
-  color: #555; }
-  .lead em {
+.copy {
+  color: #555;
+  max-width: 50rem;
+  padding: 10vw;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.4rem; }
+  @media (min-width: 62rem) {
+    .copy {
+      font-size: 1.25rem;
+      line-height: 1.4rem;
+      padding: 10vw 4rem; } }
+  .copy em {
     color: black; }
 
 .fullscreen {
   height: 100vh;
   max-height: 100vmin;
-  background-size: cover;
-  background-position: center center;
   z-index: 0; }
 
 .square > div {
   height: 50vw;
-  min-height: 50vmax;
+  min-height: 50vmax; }
+
+.photo, .knockout {
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 100%; }
 
 .photo {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 .knockout {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%; }
+  background-size: contain; }
 
 .device .iphone {
   background: white;
   min-height: 50vm; }
 
-.project-header {
+.project-header .grid {
   min-height: calc(50vh - 84px);
   padding: 2rem 0;
   display: table;
   width: 100%; }
-  .project-header > .col {
+  .project-header .grid > .col {
     vertical-align: bottom;
     display: table-cell; }
 
@@ -346,7 +373,9 @@ Project Navigation
 =========================================== */
 .next {
   color: white;
-  background: black; }
+  background: black;
+  min-height: 1;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
   .next .grid {
     padding: 2rem 0; }
     @media (min-width: 62rem) {
@@ -354,12 +383,9 @@ Project Navigation
         min-height: 20rem; } }
   .next a, .next a:visited {
     display: block;
-    color: currentColor;
-    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+    color: currentColor; }
   .next a:hover {
-    background: #222;
-    cursor: url(/r/images/cursor-arrow.png), default; }
+    cursor: url(/r/images/cursor-arrow.png), pointer; }
   .next h5 {
     margin-bottom: 1rem; }
     @media (min-width: 62rem) {

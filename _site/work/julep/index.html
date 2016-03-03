@@ -11,6 +11,12 @@
 	<title>Joe Shoop—Julep</title>
 
 	<style>
+
+	body {
+		background: #fff;
+		color: #000;
+	}
+
 	.project-header, header {
 		background: #fff;
 		color: #000;
@@ -21,10 +27,17 @@
 		color: #C228B8;
 	}
 	
+
+	.next a:hover {
+		color:  ;
+	}
 	</style>
 </head>
 
-<header>
+<body>
+<div id="main" class="m-scene">
+
+	<header>
 	<div class="wrap">
 		<div class="grid grid-align-middle">
 			<div class="col">
@@ -45,40 +58,39 @@
 	</div>
 </header>
 
-<body>
-
-<section class="content">
-	<div class="project-header grid">
-	<div class="col">
-		<div class="wrap">
-			<h2>Julep </h2>
-			<span class="text-small">UX & UI Design for iPhone</span>
+	<section class="content scene-element">
+		<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>Julep </h2>
+				<span class="text-small">UX & UI Design for iPhone</span>
+			</div>
 		</div>
 	</div>
+	<div class="pusher">
+	</div>
 </div>
-<div class="fullscreen grid" style="background-color:#111">
+<div class="project-content">
+	<div class="fullscreen grid" style="background-color:#111">
 	<div class="photo col" style="background-image:url(/projects/julep/Julep-Phonehand.jpg);">
 	</div>
 </div>
 
+<section class="copy">
+	<p><em>Julep Maven</em> is a monthly box full of high quality nail polishes and other beauty products. Julep was expanding their subscription with new tiers, giving subscribers more options to customize the items they would recive in their upcoming monthly box, and they needed a new app.</p>
+
+	<p>I worked with Toy Rockets to design a new app for Julep that included this upgraded flexibility and helped clarify how to take advantage of these new features.</p>
+</section>
+
 <div class="square grid">
-	<div class="knockout col" style="background-color:#C227B9;">
-		<img src="/r/images/iphone.svg" />
+	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
 	</div>
-	<div class="knockout col" style="background-color:#222;">
-		<img src="/r/images/iphone.svg" />
+	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
 	</div>
 </div>
 
-<section class="lead row">
-	<div class="col-xs-12 col-md-8">
-		<p><em>Julep Maven</em> is a monthly box full of high quality nail polishes and other beauty products. Julep was expanding their subscription with new tiers, giving subscribers more options to customize the items they would recive in their upcoming monthly box, and they needed a new app.</p>
-
-		<p>I worked with Toy Rockets to design a new app for Julep that included this upgraded flexibility and helped clarify how to take advantage of these new features.</p>
-	</div>
-</section>
-
-<div class="wrap">
+<!-- <div class="wrap">
 	<section>
 		<h3>Initial Exporation/Project Goals</h3>
 		<ul>
@@ -104,6 +116,7 @@
 			<li>Short "What I learned" type blurb</li>
 		</ul>
 	</section>
+</div> -->
 </div>
 
 
@@ -112,15 +125,11 @@
   
 
   
+
   
 
   
-  
 
-  
-  
-
-  
   
 
   
@@ -130,23 +139,25 @@
 
     	
 
-  		
-    	
-
-  
   
 
   
-  
 
   
-  
 
-  
   
 
 
 
+<style>
+.next.clicked {
+  background: #131313;
+  color: #fff;
+}
+.next.clicked a h2 {
+  color: #BA1924 ;
+}
+</style>
 <section class="next">
 	<a href="/work/showtime-anytime/">
 		<div class="wrap">
@@ -161,9 +172,9 @@
 </section>
 
 
-</section>
+	</section>
 
-<footer class="footer">
+	<footer class="footer">
 	<div class="wrap">
 		<div class="grid">
 			<div class="col">
@@ -184,6 +195,6 @@
 	</div>
 </footer>
 
+</div>
 </body>
-
 </html>

@@ -11,6 +11,12 @@
 	<title>Joe Shoop—Blue Nile</title>
 
 	<style>
+
+	body {
+		background: #E8ECEE;
+		color: #000;
+	}
+
 	.project-header, header {
 		background: #E8ECEE;
 		color: #000;
@@ -21,10 +27,17 @@
 		color: #152753;
 	}
 	
+
+	.next a:hover {
+		color:  ;
+	}
 	</style>
 </head>
 
-<header>
+<body>
+<div id="main" class="m-scene">
+
+	<header>
 	<div class="wrap">
 		<div class="grid grid-align-middle">
 			<div class="col">
@@ -45,18 +58,21 @@
 	</div>
 </header>
 
-<body>
-
-<section class="content">
-	<div class="project-header grid">
-	<div class="col">
-		<div class="wrap">
-			<h2>Blue Nile </h2>
-			<span class="text-small">UX & UI Design for iPhone</span>
+	<section class="content scene-element">
+		<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>Blue Nile </h2>
+				<span class="text-small">UX & UI Design for iPhone</span>
+			</div>
 		</div>
 	</div>
+	<div class="pusher">
+	</div>
 </div>
-<div class="grid">
+<div class="project-content">
+	<div class="grid">
 		<div class="bg-red col">
 			<div class="wrap">
 			Red
@@ -64,6 +80,19 @@
 		</div>
 </div>
 
+<section class="copy">
+	<p><em>Blue Nile</em> needed to update their iPhone app.</p>
+</section>
+
+
+<div class="square grid">
+	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
+	</div>
+	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
+	</div>
+</div>
+
+<!-- 
 <div class="wrap">
 	<ol>
 		<li>Initial Exploration/Project Goals
@@ -83,6 +112,7 @@
 		</li>
 		<li>Finished product screenshots</li>
 	</ol>
+</div> -->
 </div>
 
 
@@ -90,7 +120,6 @@
     
   
 
-  
   
 
   
@@ -100,32 +129,31 @@
 
     	
 
-  		
-    	
-
-  
   
 
   
+
   
 
   
+
   
 
   
-  
 
-  
-  
-
-  
-  
-
-  
   
 
 
 
+<style>
+.next.clicked {
+  background: #001A47;
+  color: #fff;
+}
+.next.clicked a h2 {
+  color: #12ABE4 ;
+}
+</style>
 <section class="next">
 	<a href="/work/booking-suite/">
 		<div class="wrap">
@@ -140,9 +168,9 @@
 </section>
 
 
-</section>
+	</section>
 
-<footer class="footer">
+	<footer class="footer">
 	<div class="wrap">
 		<div class="grid">
 			<div class="col">
@@ -163,6 +191,6 @@
 	</div>
 </footer>
 
+</div>
 </body>
-
 </html>

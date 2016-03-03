@@ -11,6 +11,12 @@
 	<title>Joe Shoop—Booking Suite</title>
 
 	<style>
+
+	body {
+		background: #001A47;
+		color: #fff;
+	}
+
 	.project-header, header {
 		background: #001A47;
 		color: #fff;
@@ -21,10 +27,17 @@
 		color: #12ABE4;
 	}
 	
+
+	.next a:hover {
+		color:  ;
+	}
 	</style>
 </head>
 
-<header>
+<body>
+<div id="main" class="m-scene">
+
+	<header>
 	<div class="wrap">
 		<div class="grid grid-align-middle">
 			<div class="col">
@@ -45,18 +58,21 @@
 	</div>
 </header>
 
-<body>
-
-<section class="content">
-	<div class="project-header grid">
-	<div class="col">
-		<div class="wrap">
-			<h2>Booking Suite </h2>
-			<span class="text-small">Product Design, Front-End</span>
+	<section class="content scene-element">
+		<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>Booking Suite </h2>
+				<span class="text-small">Product Design, Front-End</span>
+			</div>
 		</div>
 	</div>
+	<div class="pusher">
+	</div>
 </div>
-<div class="grid">
+<div class="project-content">
+	<div class="grid">
 	<div class="bg-red col">
 		<div class="wrap">
 		Booking Suite!
@@ -65,14 +81,26 @@
 </div>
 
 
+<div class="square grid">
+	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
+	</div>
+	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
+	</div>
+</div>
+
+<section class="copy">
+	<p>While working at <em>Booking Suite</em>, I designed some things.</p>
+</section>
+
+</div>
+
+
   
     
   
 
   
-  
 
-  
   
 
   
@@ -82,29 +110,29 @@
 
     	
 
-  		
-    	
-
-  
   
 
   
+
   
 
   
-  
 
   
-  
 
-  
-  
-
-  
   
 
 
 
+<style>
+.next.clicked {
+  background: #E5EFFB;
+  color: #000;
+}
+.next.clicked a h2 {
+  color: #D21E29 ;
+}
+</style>
 <section class="next">
 	<a href="/work/clipcard/">
 		<div class="wrap">
@@ -119,9 +147,9 @@
 </section>
 
 
-</section>
+	</section>
 
-<footer class="footer">
+	<footer class="footer">
 	<div class="wrap">
 		<div class="grid">
 			<div class="col">
@@ -142,6 +170,6 @@
 	</div>
 </footer>
 
+</div>
 </body>
-
 </html>

@@ -9,6 +9,12 @@
 	<title>{{ site.title }}—{{ page.title }}</title>
 
 	<style>
+
+	body {
+		background: {{ page.color-bg }};
+		color: {{ page.color-text }};
+	}
+
 	.project-header, header {
 		background: {{ page.color-bg }};
 		color: {{ page.color-text }};
@@ -19,5 +25,9 @@
 		color: {{ page.color-headline }};
 	}
 	{% endif %}
+
+	.next a:hover {
+		color: {{ next.color-headline }} ;
+	}
 	</style>
 </head>

@@ -2,16 +2,17 @@
 
 {% include head.html %}
 
-{% include header.html %}
-
 <body>
+<div id="main" class="m-scene">
 
-<section class="content">
-	{{ content }}
-</section>
+	{% include header.html %}
 
-{% include footer.html %}
+	<section class="content scene-element">
+		{{ content }}
+	</section>
 
+	{% include footer.html %}
+
+</div>
 </body>
-
 </html>

@@ -11,6 +11,12 @@
 	<title>Joe Shoop—Target</title>
 
 	<style>
+
+	body {
+		background: #fff;
+		color: #000;
+	}
+
 	.project-header, header {
 		background: #fff;
 		color: #000;
@@ -21,10 +27,17 @@
 		color: #cc0000;
 	}
 	
+
+	.next a:hover {
+		color:  ;
+	}
 	</style>
 </head>
 
-<header>
+<body>
+<div id="main" class="m-scene">
+
+	<header>
 	<div class="wrap">
 		<div class="grid grid-align-middle">
 			<div class="col">
@@ -45,21 +58,28 @@
 	</div>
 </header>
 
-<body>
-
-<section class="content">
-	<div class="project-header grid">
-	<div class="col">
-		<div class="wrap">
-			<h2>Target for iPhone & iPad</h2>
-			<span class="text-small">Interface Design for iPhone & iPad, Icon Illustration</span>
+	<section class="content scene-element">
+		<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>Target for iPhone & iPad</h2>
+				<span class="text-small">Interface Design for iPhone & iPad, Icon Illustration</span>
+			</div>
 		</div>
 	</div>
+	<div class="pusher">
+	</div>
 </div>
-<div class="fullscreen grid grid-align-middle" style="background-color:#ff5500;">
+<div class="project-content">
+	<div class="fullscreen grid grid-align-middle" style="background-color:#ff5500;">
 	<div class="photo col" style="background-image:url(/projects/target/target-ipads-isometric.jpg)">
 	</div>
 </div>
+
+<section class="copy">
+	<p><em>Target</em> wanted to get in on the ground floor with a native app for the recently launched iPad.</p>
+</section>
 
 <div class="square grid grid-align-middle">
 	<div class="knockout col" style="background-image:url(/projects/target/target-storeicons.png)">
@@ -73,7 +93,7 @@
 	</div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
 	<div class="col-xs">
 		<div class="wrap">
 
@@ -130,6 +150,7 @@
 			</ul>
 		</div>
 	</div>
+</div> -->
 </div>
 
 
@@ -138,24 +159,17 @@
   
 
   
+
   
 
   
+
   
 
   
-  
 
   
-  
 
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -165,14 +179,19 @@
   			
   		
 
-  		
-    	
-
-  
   
 
 
 
+<style>
+.next.clicked {
+  background: #fff;
+  color: #000;
+}
+.next.clicked a h2 {
+  color: #ff5500 ;
+}
+</style>
 <section class="next">
 	<a href="/work/blix/">
 		<div class="wrap">
@@ -187,9 +206,9 @@
 </section>
 
 
-</section>
+	</section>
 
-<footer class="footer">
+	<footer class="footer">
 	<div class="wrap">
 		<div class="grid">
 			<div class="col">
@@ -210,6 +229,6 @@
 	</div>
 </footer>
 
+</div>
 </body>
-
 </html>

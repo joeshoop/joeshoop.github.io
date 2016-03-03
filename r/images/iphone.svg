@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="856px" height="1762px" viewBox="0 0 856 1762" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>iphone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="53" y="214" width="750" height="1334"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="iphone" sketch:type="MSLayerGroup">
+            <g id="device" sketch:type="MSShapeGroup">
+                <rect id="background" fill="#000000" x="0" y="0" width="856" height="1762" rx="130"></rect>
+                <path d="M428,1716 C465.555365,1716 496,1685.55536 496,1648 C496,1610.44464 465.555365,1580 428,1580 C390.444635,1580 360,1610.44464 360,1648 C360,1685.55536 390.444635,1716 428,1716 Z" id="homebutton" stroke="#FFFFFF" stroke-width="10"></path>
+                <rect id="speaker" fill="#FFFFFF" x="361" y="105" width="134" height="12" rx="6"></rect>
+                <circle id="camera" fill="#FFFFFF" cx="291" cy="111" r="14"></circle>
+            </g>
+            <mask id="mask-2" sketch:name="screen" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="screen" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

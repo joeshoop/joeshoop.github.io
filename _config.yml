@@ -1,5 +1,7 @@
+title: "Joe Shoop"
+
 sass:
-    sass_dir: r/css/_sass
+    sass_dir: /r/css/_scss/
 
 collections:
   projects:

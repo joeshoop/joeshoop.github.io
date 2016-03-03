@@ -1,73 +1,17 @@
 ---
-title: Joe Shoop &#149; Work
-layout: base
+layout: default
+title: Home
 ---
 
-<div class="thumbnails container">
-  <div class="row">
-    <div id="intro">
-      <a class="joe" href="/">Joe Shoop</a>
-      <h2>Joe Shoop is an interface designer living and working and taking naps in sunny Seattle, Washington.</h2>
-      <p>Full portfolio coming soon.</p>
-      <p>Available for Freelance & Contract projects – <a href="mailto:joe@joeshoop.com">Email Me</a></p>
-    <ul>
+<div class="wrap">
+  <h2>Joe Shoop is an independent interaction designer in Seattle.</h2>
+  <ul>
     {% for project in site.projects %}
-      <li>
-        <a href="{{ project.url }}">{{ project.title }}</a>
-      </li>
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
     {% endfor %}
-    </ul>
-    </div>
-    <div>
-      <div class="empty row">
-      </div>
-      <div class="row">
-        <div href="/posts/blix.html" class="project p-blix">
-          <h2>Blix for iPhone</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div>
-      <div class="row">
-        <a class="tweet" href="https://twitter.com/joeshoop/status/568232670687178752">
-          <span class="tweet-text">I can't wait for selfie driving cars.</span>
-          <span class="tweet-link">@joeshoop</span>
-        </a>
-        <a class="instagram" href="https://instagram.com/p/y6O8xeGlNd/" style="background:url('r/images/instagram.jpg') center center no-repeat; background-size:cover;">
-          <span class="instagram-text">via Instagram</span>
-        </a>
-      </div>
-      <div class="row">
-        <div href="/posts/showtime.html" class="project p-showtime">
-          <h2>Showtime iOS</h2>
-        </div>
-      </div>
-    </div>
-    <div href="/posts/target.html" class="project p-target">
-      <h2>Target for iOS</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div href="/posts/julep.html" class="project p-julep">
-      <h2>Julep for iPhone</h2>
-    </div>
-    <div>
-      <div class="row">
-        <div href="/posts/illustration.html" class="project p-illustration">
-          <h2>Engagement Party Invitations</h2>
-        </div>
-        <div href="/posts/clipcard.html" class="project p-clipcard">
-          <h2>ClipCard</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div href="posts/bluenile.html" class="project p-bluenile">
-          <h2>Blue Nile for iPhone</h2>
-        </div>
-      </div>
-    </div>
-  </div>
+  </ul>
 
+  <p>Thanks for looking.</p>
 </div>

@@ -1,10 +1,7 @@
-// Contents of functions.js
 ;(function($) {
   'use strict';
   var $body = $('html, body'),
-      content = $('#wrapper').smoothState({
-        prefetch: true,
-        pageCacheSize: 4,
+      content = $('#main').smoothState({
         // Runs when a link has been activated
         onStart: {
           duration: 250, // Duration of our animation

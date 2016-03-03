@@ -1,13 +1,14 @@
-{% include header.html %}
-
+---
+layout: default
+---
+<div class="project-header grid">
+	<div class="col">
+		<div class="wrap">
+			<h2>{{ page.title }} {{ page.subtitle }}</h2>
+			<span class="text-small">{{ page.categories }}</span>
+		</div>
+	</div>
+</div>
 {{ content }}
 
-    <ul>
-    {% for project in site.projects %}
-      <li>
-        <a href="{{ project.url }}">{{ project.title }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-
-{% include footer.html %}
+{% include project-navigation.html %}

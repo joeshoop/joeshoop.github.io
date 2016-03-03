@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="project-header">
+	<div class="grid">
+		<div class="col">
+			<div class="wrap">
+				<h2>{{ page.title }} {{ page.subtitle }}</h2>
+				<span class="text-small">{{ page.categories }}</span>
+			</div>
+		</div>
+	</div>
+	<div class="pusher">
+	</div>
+</div>
+<div class="project-content">
+	{{ content }}
+</div>
+
+{% include project-navigation.html %}

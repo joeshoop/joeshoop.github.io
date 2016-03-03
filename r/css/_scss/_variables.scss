@@ -1,10 +1,20 @@
 $color-tint: #fff;
+$color-primary: #F1BA05;
+
+$color-body-bg: white;
+$color-body-text: black;
+$color-body-link: $color-primary;
+
+$color-footer-bg: black;
+$color-footer-text: white;
+$color-footer-link: $color-primary;
+
 
 $color-tint-contrast-min: if(lightness($color-tint) < 80%, white, darken($color-tint, 75%));
 $color-tint-contrast-max: if(lightness($color-tint) < 35%, white, darken($color-tint, 100%));
 
 $type-l: 1.5em;
-$site-max-width: 1300px;
+$site-max-width: 85rem;
 
-$tablet-width: 700px;
-$desktop-width: 1030px;
+$break-medium: "min-width:62rem";
+$break-small: "min-width:48rem";

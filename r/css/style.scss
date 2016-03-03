@@ -1,0 +1,247 @@
+---
+---
+
+/*=========================================
+Reset
+=========================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.group:before,
+.group:after { content: ""; display: table;}
+.group:after { clear: both;}
+.group { zoom: 1;}
+
+@import "variables";
+
+@import "tablegrid";
+
+@import "transitions";
+
+@import "typebase";
+
+html,body {
+	min-height:100%;
+}
+
+body {
+	position: relative;
+	max-width:100%;
+  color:$color-body-text;
+  background:$color-body-bg;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+section.content {
+  min-height:100vh;
+}
+
+.wrap {
+  max-width:$site-max-width;
+  margin:0 auto;
+  padding: 0 1rem;
+
+  @media ($break-medium) {
+    padding:0 4rem;
+  }
+}
+
+@media ($break-small) {
+  .right-sm {
+    text-align:right;
+  }
+}
+
+/*=========================================
+Header
+=========================================== */
+
+nav {
+	z-index:1000;
+
+  a, a:hover {
+    color:currentColor;
+  }
+
+  ul {
+    list-style-type: none;
+    display:inline;
+  }
+
+  li {
+    display:inline-block;
+
+    & + li {
+      padding-left:1em;
+    }
+
+    &.current a {
+      opacity:1;
+    }
+
+    &.current a {
+      border-bottom:2px solid $color-primary;
+    }
+  }
+}
+
+.project-content {
+  background:white;
+  color:black;
+}
+
+
+header a, footer nav a {
+  color:currentColor;
+  opacity:.4;
+
+  &:hover {
+    opacity:1;
+  }
+}
+
+.home {
+  display:inline-block;
+}
+
+img {
+	max-width:100%;
+}
+
+.project {
+  min-height:100vh;
+}
+
+a	{
+  color:$color-primary;
+	text-decoration:none;
+	transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+::selection {
+  background:$color-primary;
+  color:white;
+}
+
+/*=========================================
+Project Page
+=========================================== */
+
+.bg-red .wrap {
+  background:#ACBACA;
+  color:white;
+  min-height:50vw;
+}
+
+.copy {
+  color:#555;
+  max-width:50rem;
+  padding:10vw;
+  margin:0 auto;
+  font-size: 1rem;
+  line-height: $leading * 1;
+
+  @media ($break-medium) {
+      font-size:1.25rem;
+      line-height: $leading * 1;
+      padding:10vw 4rem;
+      
+  }
+  
+  em {
+      color:black;
+  }
+}
+
+.fullscreen {
+  height: 100vh;
+  max-height:100vmin;
+  z-index: 0;
+}
+
+.square > div {
+  height:50vw;
+  min-height:50vmax;
+}
+
+.photo, .knockout {
+  background-position:center center;
+  background-repeat: no-repeat;
+  height:100%;
+}
+
+.photo {
+  background-size:cover;
+}
+
+.knockout {
+  background-size: contain;
+}
+
+.device {
+
+  .iphone {
+    background:white;
+    min-height:50vm;
+  }
+}
+
+.project-header .grid {
+    min-height:calc(50vh - 84px);
+    padding:2rem 0;
+    display:table;
+    width:100%;
+
+    & > .col {
+      vertical-align:bottom;
+      display:table-cell;
+    }
+}
+
+/*=========================================
+Project Navigation
+=========================================== */
+
+.next {
+  color:white;
+  background:black;
+  min-height:1;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .grid {
+    padding: 2rem 0;
+
+    @media ($break-medium) {
+      min-height:20rem;
+    }
+  }
+
+  a, a:visited {
+    display:block;
+    color:currentColor;
+  }
+
+  a:hover {
+    cursor: url(/r/images/cursor-arrow.png), pointer;
+  }
+
+  h5 {
+    margin-bottom:1rem;
+
+    @media ($break-medium) {
+      margin-bottom:2rem;
+    }
+  }
+}
+
+/*=========================================
+Footer
+=========================================== */
+
+.footer {
+  background:$color-footer-bg;
+  color:$color-footer-text;
+  padding-bottom:3rem;
+}

@@ -1,0 +1,33 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="/r/images/favicon.ico">
+	<link rel="stylesheet" href="/r/css/tablegrid.css">
+	<link rel="stylesheet" href="/r/css/style.css">
+
+	<title>{{ site.title }}—{{ page.title }}</title>
+
+	<style>
+
+	body {
+		background: {{ page.color-bg }};
+		color: {{ page.color-text }};
+	}
+
+	.project-header, header {
+		background: {{ page.color-bg }};
+		color: {{ page.color-text }};
+	}
+
+	{% if page.color-headline %}
+	.project-header h2 {
+		color: {{ page.color-headline }};
+	}
+	{% endif %}
+
+	.next a:hover {
+		color: {{ next.color-headline }} ;
+	}
+	</style>
+</head>

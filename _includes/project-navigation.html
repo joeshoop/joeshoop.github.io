@@ -1,0 +1,40 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+  {% if page.collection %}
+    {% assign  document = site[the_collection]  %}
+  {% endif %}
+{% for links in document  %}
+  {% if links.title == page.title %}
+  		{% if forloop.last == false %}
+    		{% assign next = document[forloop.index] %}
+    	{% endif %}
+
+    	{% if forloop.last %}
+  			{% assign next = document[0] %}
+  		{% endif %}
+
+  {% endif %}
+{% endfor %}
+
+{% if next.url %}
+<style>
+.next.clicked {
+  background: {{ next.color-bg }};
+  color: {{ next.color-text }};
+}
+.next.clicked a h2 {
+  color: {{ next.color-headline }} ;
+}
+</style>
+<section class="next">
+	<a href="{{next.url}}">
+		<div class="wrap">
+			<div class="grid grid-align-middle">
+				<div class="col">
+					<h5 class="smallcaps">Next</h5>
+					<h2>{{next.title}}</h2>
+				</div>
+			</div>
+		</div>
+	</a>
+</section>
+{% endif %}

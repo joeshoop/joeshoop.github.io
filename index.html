@@ -8,7 +8,7 @@ title: Home
   <ul>
     {% for project in site.projects %}
     <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>
+      <a href="{{ project.url | remove: "index.html" }}">{{ project.title }}</a>
     </li>
     {% endfor %}
   </ul>

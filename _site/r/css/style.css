@@ -332,7 +332,7 @@ code {
   z-index: 1000;
   display: block;
   height: calc(100% - 4rem);
-  width: 3rem;
+  width: 8vw;
   top: 0;
   padding: 0 1rem;
   line-height: 0px;
@@ -342,7 +342,8 @@ code {
   background: transparent;
   background-size: contain;
   border: none;
-  outline: none; }
+  outline: none;
+  transition: background 600ms cubic-bezier(0.165, 0.84, 0.44, 1); }
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
@@ -360,13 +361,17 @@ code {
   left: 0; }
   @media (min-width: 48rem) {
     .slick-prev {
-      background: transparent url("/r/images/icon-arrow-prev.svg") center center no-repeat; } }
+      background: transparent url("/r/images/icon-arrow-prev.svg") center center no-repeat; }
+      .slick-prev:hover {
+        background-position-x: 30%; } }
 
 .slick-next {
   right: 0; }
   @media (min-width: 48rem) {
     .slick-next {
-      background: transparent url("/r/images/icon-arrow-next.svg") center center no-repeat; } }
+      background: transparent url("/r/images/icon-arrow-next.svg") center center no-repeat; }
+      .slick-next:hover {
+        background-position-x: 70%; } }
 
 .slick-dots {
   list-style: none;
@@ -566,7 +571,7 @@ header a, footer nav a {
         min-height: 20rem; } }
   .next a, .next a:visited {
     color: currentColor; }
-  .next .wrap {
+  .next a > div {
     display: table-cell;
     vertical-align: middle; }
   .next h5 {

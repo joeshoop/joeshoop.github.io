@@ -260,7 +260,7 @@ header a, footer nav a {
     color:currentColor;
   }
 
-  .wrap {
+  a > div {
     display:table-cell;
     vertical-align: middle;
   }

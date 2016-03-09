@@ -36,7 +36,7 @@ $slick-dot-size: 20px;
     z-index:1000;
     display: block;
     height: calc(100% - 4rem);
-    width: 3rem;
+    width: 8vw;
     top:0;
     padding:0 1rem;
     line-height: 0px;
@@ -47,6 +47,7 @@ $slick-dot-size: 20px;
     background-size:contain;
     border: none;
     outline: none;
+    transition: background 600ms cubic-bezier(0.165, 0.84, 0.44, 1);;
     &:hover, &:focus {
         outline: none;
         // background: transparent;
@@ -65,6 +66,10 @@ $slick-dot-size: 20px;
 
 	@media ($break-small) {
     	background: transparent url('/r/images/icon-arrow-prev.svg') center center no-repeat;
+
+    	&:hover {
+			background-position-x: 30%;
+		}
     }
 }
 .slick-next {
@@ -72,6 +77,10 @@ $slick-dot-size: 20px;
 
 	@media ($break-small) {
     	background: transparent url('/r/images/icon-arrow-next.svg') center center no-repeat;
+
+    	&:hover {
+			background-position-x: 70%;
+		}
     }
 }
 

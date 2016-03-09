@@ -1,11 +1,11 @@
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—Booking Suite</title>
 
@@ -32,17 +32,14 @@
 	}
 	</style>
 </head>
-
 <body>
-<div id="main" class="m-scene">
-
-	<header>
+<header class="header-bar">
 	<div class="wrap">
-		<div class="grid grid-align-middle">
-			<div class="col">
+		<section class="header-container">
+			<div>
 				<p class="home"><a href="/">Joe Shoop</a></p>
 			</div>
-			<div class="col right-sm">
+			<div class="right-sm">
 				
 
 <nav>
@@ -53,25 +50,21 @@
   </ul>
 </nav>
 			</div>
-		</div>
+		</section>
 	</div>
 </header>
-
-	<section class="content scene-element">
-		<div class="project-header">
-	<div class="grid">
-		<div class="col">
-			<div class="wrap">
-				<h2>Booking Suite </h2>
-				<span class="text-small">Product Design, Front-End</span>
-			</div>
+<section class="project-header">
+	<div>
+		<div class="wrap">
+			<h2>Booking Suite </h2>
+			<span class="text-small">Product Design, Front-End</span>
+		</div>
+		<div class="pusher">
 		</div>
 	</div>
-	<div class="pusher">
-	</div>
-</div>
-<div class="project-content">
-	<div class="grid">
+</section>
+
+<div class="grid">
 	<div class="bg-red col">
 		<div class="wrap">
 		Booking Suite!
@@ -87,10 +80,26 @@
 </div>
 
 <section class="copy">
-	<p>While working at <em>Booking Suite</em>, I designed some things.</p>
+	<p><em>Booking Suite</em> is a part of Booking.com. They make software for hotels - to help manage bookings and reservations, or to create a website. I was involved with two big projects while there - one was an update to their CMS, called 'Back Office' internally. Lots of front end using scss.</p>
 </section>
 
-</div>
+<section class="copy">
+	<p>BOv2 - Today</p>
+	<p>BOv2 - Menu animation?</p>
+	<p>BOv2 - Reservation Detail</p>
+</section>
+
+<section class="copy">
+	<p>iPhone - Login</p>
+	<p>iPhone - Today</p>
+	<p>iPhone - Menu</p>
+	<p>iPhone - Reservation Detail</p>
+</section>
+
+<section class="copy">
+	<p>Terminus Logo</p>
+	<p>Terminus Towels</p>
+</section>
 
 
 
@@ -98,35 +107,20 @@
 
 
 
-<style>
-.next.clicked {
-  background: #E5EFFB;
-  color: #000;
-}
-.next.clicked a h2 {
-  color: #D21E29 ;
-}
-</style>
 <section class="next">
-	<a href="/projects/clipcard/">
-		<div class="wrap">
-			<div class="grid grid-align-middle">
-				<div class="col">
-					<h5 class="smallcaps">Next</h5>
-					<h2>ClipCard</h2>
-				</div>
-			</div>
-		</div>
-	</a>
+  <a href="/projects/clipcard/">
+    <div class="wrap">
+      <h5 class="smallcaps">Next</h5>
+      <h2>ClipCard</h2>
+    </div>
+  </a>
 </section>
 
 
-	</section>
-
-	<footer class="footer">
+<footer>
 	<div class="wrap">
-		<div class="grid">
-			<div class="col">
+		<section>
+			<div>
 				
 
 <nav>
@@ -137,14 +131,49 @@
   </ul>
 </nav>
 			</div>
-			<div class="col">
+			<div >
 				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
-		</div>
+		</section>
 	</div>
 </footer>
 
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/r/js/slick.min.js"></script>
+<script>
 
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});</script>
 </body>
 </html>

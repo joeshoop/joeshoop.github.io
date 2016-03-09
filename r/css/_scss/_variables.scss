@@ -14,7 +14,9 @@ $color-tint-contrast-min: if(lightness($color-tint) < 80%, white, darken($color-
 $color-tint-contrast-max: if(lightness($color-tint) < 35%, white, darken($color-tint, 100%));
 
 $type-l: 1.5em;
-$site-max-width: 85rem;
+$site-max-width: 80rem;
 
 $break-medium: "min-width:62rem";
 $break-small: "min-width:48rem";
+
+$spacing: 1.5rem;

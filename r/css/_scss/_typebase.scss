@@ -1,21 +1,15 @@
 /*! Typebase.scss v0.1.0 | MIT License */
 
-$baseFontStack:"NimbusSansDOT", sans-serif;
-$headerFontStack:"Campton", serif;
+$baseFontStack:"NimbusSansDOT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerFontStack:"Campton-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $baseFontSize:20; // in px
-$baseLineHeight:1.4;
+$baseLineHeight:1.5;
 $leading:$baseLineHeight * 1rem;
-$minimumFontSize:13; // in px
+$minimumFontSize:10; // in px
 
 $scale:1.5;
 $mobile-scale: 1.25;
-
-// $p: 1 :: 1.125;
-// $h2: 1.5 :: 3;
-// $h3: 1.5 :: 2;
-// $text-small: .75 :: .825;
-
 
 @function exponent($base, $exponent) {
   $value: $base;
@@ -47,7 +41,13 @@ $mobile-scale: 1.25;
 }
 
 
-/* Setup */
+// Setup
+
+@import url("//hello.myfonts.net/count/309406");
+
+  
+@font-face {font-family: 'Campton-Bold';src: url('/r/webfonts/309406_0_0.eot');src: url('/r/webfonts/309406_0_0.eot?#iefix') format('embedded-opentype'),url('/r/webfonts/309406_0_0.woff2') format('woff2'),url('/r/webfonts/309406_0_0.woff') format('woff'),url('/r/webfonts/309406_0_0.ttf') format('truetype');}
+ 
 
 html {
     font-family: $baseFontStack;
@@ -71,9 +71,7 @@ p {
 }
 
 .text-small {
-    margin-top:1rem;
     font-size: 0.75rem;
-    line-height:1.4em;
 
     @media ($break-medium) {
         font-size:0.825rem;
@@ -83,7 +81,7 @@ p {
 .smallcaps {
     text-transform: uppercase;
     letter-spacing: .2em;
-    font-size:.625rem;
+    font-size:ms(-2);
 }
 
 ul,
@@ -105,30 +103,30 @@ ol {
         margin-bottom: 0;
     }
 }
-blockquote {
-    font-family: $headerFontStack;
-    font-weight:700;
-    line-height: 3rem;
-    margin-bottom: $leading;
-    margin-top:0;
+// blockquote {
+//     font-family: $headerFontStack;
+//     font-weight:700;
+//     line-height: 3rem;
+//     margin-bottom: $leading;
+//     margin-top:0;
 
-    font-size: 1.5rem;
-    line-height: $leading * 1.25;
+//     font-size: 1.5rem;
+//     line-height: $leading * 1.25;
 
-    @media ($break-medium) {
-        margin-top: $leading;
-        font-size:2.25rem;
-        line-height: $leading * 2;
+//     @media ($break-medium) {
+//         margin-top: $leading;
+//         font-size:2.25rem;
+//         line-height: $leading * 2;
         
-    }
-}
-/* Headings */
+//     }
+// }
+
+// Headings
 
 h1,
 h2,
 h3,
 h4 {
-    /* Change heading typefaces here */
     font-family: $headerFontStack;
     // margin-top: $leading;
     margin-top:0;
@@ -148,20 +146,27 @@ h1 {
     }
 }
 h2 {
-    font-size: 2.25rem;
+    font-size: ms(3);
     line-height: $leading * 2;
-    // margin-top: $leading * 2;
-    font-weight:700;
+
+    @media ($break-small) {
+        font-size:ms(4);
+        line-height: $leading * 3;
+    }
 
     @media ($break-medium) {
-        font-size:4rem;
-        line-height: $leading * 3;
-        
+        font-size:ms(5);
+        line-height: $leading * 4;
     }
 }
 h3 {
     font-size: ms(2);
-    margin-top:1rem;
+    line-height: $leading;
+
+    @media ($break-medium) {
+        font-size:ms(3);
+        line-height: $leading * 2;
+    }
 }
 /* Tables */
 

@@ -1,11 +1,11 @@
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—Blue Nile</title>
 
@@ -32,17 +32,14 @@
 	}
 	</style>
 </head>
-
 <body>
-<div id="main" class="m-scene">
-
-	<header>
+<header class="header-bar">
 	<div class="wrap">
-		<div class="grid grid-align-middle">
-			<div class="col">
+		<section class="header-container">
+			<div>
 				<p class="home"><a href="/">Joe Shoop</a></p>
 			</div>
-			<div class="col right-sm">
+			<div class="right-sm">
 				
 
 <nav>
@@ -53,25 +50,21 @@
   </ul>
 </nav>
 			</div>
-		</div>
+		</section>
 	</div>
 </header>
-
-	<section class="content scene-element">
-		<div class="project-header">
-	<div class="grid">
-		<div class="col">
-			<div class="wrap">
-				<h2>Blue Nile </h2>
-				<span class="text-small">UX & UI Design for iPhone</span>
-			</div>
+<section class="project-header">
+	<div>
+		<div class="wrap">
+			<h2>Blue Nile </h2>
+			<span class="text-small">UX & UI Design for iPhone</span>
+		</div>
+		<div class="pusher">
 		</div>
 	</div>
-	<div class="pusher">
-	</div>
-</div>
-<div class="project-content">
-	<div class="grid">
+</section>
+
+<div class="grid">
 		<div class="bg-red col">
 			<div class="wrap">
 			Red
@@ -80,7 +73,19 @@
 </div>
 
 <section class="copy">
-	<p><em>Blue Nile</em> needed to update their iPhone app.</p>
+	<p><em>Blue Nile</em> is the largest online retailer of diamonds. Their iPhone app hadn't seen a major update in a few years, so it needed an update for the new aesthetic of iOS 7, and for the larger screen on the new iPhone. I worked with Toy Rockets to refresh and redesign their existing app, and to add a new 'Try it On' feature so people could see how a ring might look on their own hand.</p>
+</section>
+
+<section class="copy">
+	<p>The Ring Builder guides a user through the steps of designing their own custom ring, from choosing a band, then a setting and finally a stone.</p>
+</section>
+
+<section class="copy">
+	<p>After building their ring, the user can take a photo of their hand (or a partner's) and get a to-scale preview of how it will look. </p>
+</section>
+
+<section class="copy">
+	<p>Detail, browse, filters, etc</p>
 </section>
 
 
@@ -112,43 +117,26 @@
 		<li>Finished product screenshots</li>
 	</ol>
 </div> -->
-</div>
-
 
 
   
 
 
 
-<style>
-.next.clicked {
-  background: #001A47;
-  color: #fff;
-}
-.next.clicked a h2 {
-  color: #12ABE4 ;
-}
-</style>
 <section class="next">
-	<a href="/projects/bookingsuite/">
-		<div class="wrap">
-			<div class="grid grid-align-middle">
-				<div class="col">
-					<h5 class="smallcaps">Next</h5>
-					<h2>Booking Suite</h2>
-				</div>
-			</div>
-		</div>
-	</a>
+  <a href="/projects/bookingsuite/">
+    <div class="wrap">
+      <h5 class="smallcaps">Next</h5>
+      <h2>Booking Suite</h2>
+    </div>
+  </a>
 </section>
 
 
-	</section>
-
-	<footer class="footer">
+<footer>
 	<div class="wrap">
-		<div class="grid">
-			<div class="col">
+		<section>
+			<div>
 				
 
 <nav>
@@ -159,14 +147,49 @@
   </ul>
 </nav>
 			</div>
-			<div class="col">
+			<div >
 				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
-		</div>
+		</section>
 	</div>
 </footer>
 
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/r/js/slick.min.js"></script>
+<script>
 
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});</script>
 </body>
 </html>

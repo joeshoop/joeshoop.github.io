@@ -1,11 +1,11 @@
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—ClipCard</title>
 
@@ -32,17 +32,14 @@
 	}
 	</style>
 </head>
-
 <body>
-<div id="main" class="m-scene">
-
-	<header>
+<header class="header-bar">
 	<div class="wrap">
-		<div class="grid grid-align-middle">
-			<div class="col">
+		<section class="header-container">
+			<div>
 				<p class="home"><a href="/">Joe Shoop</a></p>
 			</div>
-			<div class="col right-sm">
+			<div class="right-sm">
 				
 
 <nav>
@@ -53,28 +50,28 @@
   </ul>
 </nav>
 			</div>
-		</div>
+		</section>
 	</div>
 </header>
-
-	<section class="content scene-element">
-		<div class="project-header">
-	<div class="grid">
-		<div class="col">
-			<div class="wrap">
-				<h2>ClipCard </h2>
-				<span class="text-small">Responsive Web, Interface Design</span>
-			</div>
+<section class="project-header">
+	<div>
+		<div class="wrap">
+			<h2>ClipCard </h2>
+			<span class="text-small">Responsive Web, Interface Design</span>
+		</div>
+		<div class="pusher">
 		</div>
 	</div>
-	<div class="pusher">
-	</div>
-</div>
-<div class="project-content">
-	<section class="copy">
-	<p><em>ClipCard</em> stuff.</p>
 </section>
 
+<section class="copy">
+	<p><em>ClipCard</em> was working on making it easier to find your cloud files. By combining things like Dropbox and Google Drive into one searchable UI, you could search all your cloud-based stuff at once, and would no longer have to remember which of the seemingly endless cloud storage services your file is on. I worked with ClipCard to help clarify their search UX, and to improve the interface design of the app.</p>
+</section>
+
+<section class="copy">
+	<p>Search UX</p>
+	<p>UI Improvements</p>
+</section>
 
 <div class="square grid">
 	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
@@ -103,43 +100,26 @@
 	</ul>
 </section>
 </div> -->
-</div>
-
 
 
   
 
 
 
-<style>
-.next.clicked {
-  background: #fff;
-  color: #000;
-}
-.next.clicked a h2 {
-  color: #C228B8 ;
-}
-</style>
 <section class="next">
-	<a href="/projects/julep/">
-		<div class="wrap">
-			<div class="grid grid-align-middle">
-				<div class="col">
-					<h5 class="smallcaps">Next</h5>
-					<h2>Julep</h2>
-				</div>
-			</div>
-		</div>
-	</a>
+  <a href="/projects/julep/">
+    <div class="wrap">
+      <h5 class="smallcaps">Next</h5>
+      <h2>Julep</h2>
+    </div>
+  </a>
 </section>
 
 
-	</section>
-
-	<footer class="footer">
+<footer>
 	<div class="wrap">
-		<div class="grid">
-			<div class="col">
+		<section>
+			<div>
 				
 
 <nav>
@@ -150,14 +130,49 @@
   </ul>
 </nav>
 			</div>
-			<div class="col">
+			<div >
 				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
-		</div>
+		</section>
 	</div>
 </footer>
 
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/r/js/slick.min.js"></script>
+<script>
 
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});</script>
 </body>
 </html>

@@ -1,18 +1,9 @@
 <html>
-
 {% include head.html %}
-
 <body>
-<div id="main" class="m-scene">
-
-	{% include header.html %}
-
-	<section class="content scene-element">
-		{{ content }}
-	</section>
-
-	{% include footer.html %}
-</div>
-
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+{% include scripts.html %}
 </body>
 </html>

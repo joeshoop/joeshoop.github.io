@@ -128,19 +128,19 @@ header {
     margin-bottom: .25em; }
 
 #save {
-  background: transparent url("../images/bg-save.png") 90% 0% no-repeat;
+  background: transparent url("../images/bg-save.jpg") 90% 0% no-repeat;
   background-size: cover; }
   #save .copy {
     color: black; }
 
 #share {
-  background: transparent url("../images/bg-share.png") 10% center no-repeat;
+  background: transparent url("../images/bg-share.jpg") 10% center no-repeat;
   background-size: cover; }
   #share .copy {
     float: right; }
 
 #discover {
-  background: transparent url("../images/bg-discover.png") 70% center no-repeat;
+  background: transparent url("../images/bg-discover.jpg") 70% center no-repeat;
   background-size: cover; }
 
 #footer {
@@ -256,5 +256,3 @@ header {
     font-size: 100%; }
     #intro .image {
       width: 40%; } }
-
-/*# sourceMappingURL=style.css.map */

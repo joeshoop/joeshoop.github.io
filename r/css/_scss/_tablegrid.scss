@@ -2,17 +2,19 @@
 // Grid classes
 //
 
-@media ($break-small) {
-  // Add `.grid` for the table
-  .grid {
+  .grid, section {
     display: table;
     width: 100%;
     table-layout: fixed;
   }
 
+@media ($break-small) {
+  // Add `.grid` for the table
+
   // Add `.col` for the table cells, or columns
-  .col {
+  .col, section > div {
     display: table-cell;
+    vertical-align:middle;
   }
 
   // Padded columns
@@ -53,6 +55,6 @@
   direction: rtl;
 }
 
-.grid-reverse .col {
+.grid-reverse .col, .grid-reverse > div {
   direction: ltr;
 }

@@ -1,21 +1,17 @@
 ---
 layout: default
 ---
-<div class="project-header">
-	<div class="grid">
-		<div class="col">
-			<div class="wrap">
-				<h2>{{ page.title }} {{ page.subtitle }}</h2>
-				<span class="text-small">{{ page.roles }}</span>
-			</div>
+<section class="project-header">
+	<div>
+		<div class="wrap">
+			<h2>{{ page.title }} {{ page.subtitle }}</h2>
+			<span class="text-small">{{ page.roles }}</span>
+		</div>
+		<div class="pusher">
 		</div>
 	</div>
-	<div class="pusher">
-	</div>
-</div>
-<div class="project-content">
-	{{ content }}
-</div>
+</section>
 
+{{ content }}
 
 {% include project-navigation.html %}

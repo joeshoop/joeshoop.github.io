@@ -6,6 +6,7 @@
     display: table;
     width: 100%;
     table-layout: fixed;
+    overflow:hidden;
   }
 
 @media ($break-small) {

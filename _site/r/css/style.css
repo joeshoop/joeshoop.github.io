@@ -43,7 +43,8 @@ table {
 .grid, section {
   display: table;
   width: 100%;
-  table-layout: fixed; }
+  table-layout: fixed;
+  overflow: hidden; }
 
 @media (min-width: 48rem) {
   .col, section > div {

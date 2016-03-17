@@ -5,7 +5,6 @@
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—Julep</title>
 
@@ -69,43 +68,59 @@
 	</div>
 </section>
 
-<section class="copy">
-	<p><em>Julep Maven</em> is a monthly box full of high quality nail polishes and other beauty products. Julep was expanding their Maven subscription with new tiers, giving subscribers more options to customize the items they would recive in their upcoming monthly box, and they needed a new iPhone app as part of this update.</p>
+<section class="lead copy">
+	<h5 class="text-small caps">Project Overview</h5>
+	<h3>Beauty in a Box</h3>
+	<p><em>Julep Maven</em> is a monthly subscription box full of high quality nail polishes and other beauty products. Julep was expanding their Maven subscription with new tiers, giving subscribers more options to customize the items they would recive in their upcoming monthly box, and they needed a new <span class="highlight">iPhone App</span> as part of this update.</p>
 
 	<p>I worked with Toy Rockets to design an app for Julep that included this upgraded flexibility and helped clarify how to take advantage of these new features.</p>
 </section>
 
 <section class="copy">
-	<p>We needed to design the app in a way that allowed for incremental feature additions as development work was to be completed in stages.</p>
-	<p>At first, the app was exclusive to existing Maven subscribers. Users could see what was included in that month's box, go with a different box style if they preferred, and choose from a small list of add-on items to include with their shipment.</p>
+	<h5 class="text-small caps">Minimum Viable Product</h5>
+	<h3>Version One</h3>
+	<p>At first, the app was exclusive to existing Maven subscribers. Customers could see what was included in that month's box, pick a different style if they preferred, and sometimes choose a color for an item.</p>
 </section>
 
-<div class="fullscreen grid">
-	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
+<section class="gallery">
+	<div class="iphone slider">
+		<div><img src="julep-homescreen-01.jpg" /></div>
+		<div><img src="julep-mybox-01.jpg" /></div>
+		<div><img src="julep-styles-01.jpg" /></div>
+		<div><img src="julep-customize-01.jpg" /></div>
 	</div>
-</div>
+</section>
 
 <section class="copy">
-	<p>Later, the app would include special sales with a selection of items users could purchase independent of their subscription. This update would also add a cart and payment flow.</p>
+	<h5 class="text-small caps">Upgrading & Customizing</h5>
+	<h3>Version Two</h3>
+	<p>Later, after the changes and upgrades to the Maven subscription were introduced, the app would be updated to include a flow that would allow subscribers to customize their entire box.</p>
 </section>
 
-<div class="square grid">
-	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
+<section class="gallery">
+	<div class="iphone slider">
+		<div><img src="julep-customize-prompt.jpg" /></div>
+		<div><img src="julep-customize-empty.jpg" /></div>
+		<div><img src="julep-customize-partial.jpg" /></div>
+		<div><img src="julep-customize-scrolled.jpg" /></div>
+		<div><img src="julep-customize-summary.jpg" /></div>
 	</div>
-	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
-	</div>
-</div>
+</section>
 
 <section class="copy">
-	<p>Finally, all products available on the website would become browseable, searchable, and available for purchase in the app.</p>
+	<h5 class="text-small caps">A Complete Shopping Experience</h5>
+	<h3>Version Three</h3>
+	<p>Finally, all products available on the website would become browseable, searchable, and available for purchase in the app. The app would see another udate to include a cart and a full checkout flow.</p>
 </section>
 
-<div class="square grid">
-	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
+<section class="gallery">
+	<div class="iphone slider">
+		<div><img src="julep-homescreen-03.jpg" /></div>
+		<div><img src="julep-productdetail.jpg" /></div>
+		<div><img src="julep-checkout.jpg" /></div>
+		<div><img src="julep-checkout-addons.jpg" /></div>
 	</div>
-	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
-	</div>
-</div>
+</section>
 
 <!-- <div class="wrap">
 	<section>
@@ -144,7 +159,7 @@
   <a href="/projects/showtime/">
     <div>
         <div class="wrap">
-            <h5 class="smallcaps">Next</h5>
+            <h5 class="text-small caps">Next</h5>
             <h2>Showtime Anytime</h2>
         </div>
     </div>
@@ -166,25 +181,31 @@
 </nav>
 			</div>
 			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
+				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
 		</section>
 	</div>
 </footer>
 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
 <script type="text/javascript" src="/r/js/slick.min.js"></script>
 <script>
 
-$('.slider').slick({
+$('.iphone.slider').slick({
   dots: true,
   infinite: true,
-  speed: 200,
+  speed: 300,
+  lazyload: 'ondemand',
+  cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1450,
+      breakpoint: 1550,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -198,16 +219,28 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-});</script>
+});
+
+$('.ipad.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
+
+</script>
+
+
+
+
 </body>
 </html>

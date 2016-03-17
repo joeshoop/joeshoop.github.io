@@ -5,7 +5,6 @@
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—Showtime Anytime</title>
 
@@ -64,27 +63,54 @@
 	</div>
 </section>
 
-<div class="fullscreen grid" style="background-color:#111">
-	<div class="photo col" style="background-image:url(Julep-Phonehand.jpg);">
+<section class="lead copy">
+	<h5 class="text-small caps">Project Overview</h5>
+	<h3>A New Era for TV</h3>
+	<p><em>Showtime</em> was working on a new on-demand streaming video service called Showtime Anytime for all of their content. In late 2011, they came to Übermind to design and build an <span class="highlight">iPad App</span> & an <span class="highlight">iPhone App</span> for this new service.</p>
+	<p>I led the visual design for this effort.</p>
+</section>
+
+
+<section class="copy">
+	<h5 class="text-small caps">Bigger is Better</h5>
+	<h3>iPad App</h3>
+	<p>We started with the iPad, since the larger screen would deliver the best experience for streaming video.</p>
+	<p>There were write-ups on <a href="http://venturebeat.com/2012/01/10/showtime-ipad-app/">Venture Beat</a> and <a href="http://techcrunch.com/2012/01/10/new-showtime-anytime-app-brings-showtimes-movies-and-shows-to-the-ipad/">Tech Crunch</a> about the launch of the ipad app.</p>
+</section>
+
+<section class="gallery dark">
+	<div class="ipad slider">
+		<div><img src="showtime-ipad-featured.jpg" /></div>
+		<div><img src="showtime-ipad-browse-series.png" /></div>
+		<div><img src="showtime-ipad-movies.png" /></div>
+		<div><img src="showtime-ipad-mylist-top.png" /></div>
+		<div><img src="showtime-ipad-seriesdetail.png" /></div>
+		<div><img src="showtime-ipad-episodedetail.png" /></div>
 	</div>
-</div>
-
-<section class="copy">
-	<p><em>Showtime</em> wanted to expand their streaming video platform, 'Showtime Anytime', to iPhone and iPad apps.</p>
-
-	<p>While at Übermind/Deloitte Digital, I led the visual design for this effort.</p>
 </section>
 
 <section class="copy">
-	<p>Featured - iPhone & iPad</p>
-	<p>Browse - iPhone & iPad</p>
-	<p>My List - iPhone & iPad</p>
-	<p>Series Detail - iPhone & iPad</p>
-	<p>Episode Detail - iPhone & iPad</p>
+	<h5 class="text-small caps">Small screens are cool, too</h5>
+	<h3>iPhone App</h3>
+	<p>After the iPad App launched, we started translating the design to the smaller iPhone screen. Both apps have the same features and aesthetic, but the navigation had to change a bit to accomidate the smaller screen on the phone.</p>
 </section>
 
-<section class="copy">
-	<p>App Icon</p>
+<section class="gallery dark">
+	<div class="iphone slider">
+		<div><img src="showtime-iphone-featured-dexter.png" /></div>
+		<div><img src="showtime-iphone-browse-series.png" /></div>
+		<div><img src="showtime-iphone-mylist.png" /></div>
+		<div><img src="showtime-iphone-seriesdetail-dexter.png" /></div>
+		<div><img src="showtime-iphone-episodedtail.png" /></div>
+	</div>
+</section>
+
+<section style="background-image: linear-gradient(-30deg, #2F2B2B 0%, #000 100%);">
+	<div class="full single" style="background:url('/r/images/noise.png');">
+		<div class="wrap nopadding">
+			<img src="showtime-icon.png" />
+		</div>
+	</div>
 </section>
 
 <!-- <div class="wrap">
@@ -139,7 +165,7 @@
   <a href="/projects/starbucks/">
     <div>
         <div class="wrap">
-            <h5 class="smallcaps">Next</h5>
+            <h5 class="text-small caps">Next</h5>
             <h2>Starbucks</h2>
         </div>
     </div>
@@ -161,25 +187,31 @@
 </nav>
 			</div>
 			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
+				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
 		</section>
 	</div>
 </footer>
 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
 <script type="text/javascript" src="/r/js/slick.min.js"></script>
 <script>
 
-$('.slider').slick({
+$('.iphone.slider').slick({
   dots: true,
   infinite: true,
-  speed: 200,
+  speed: 300,
+  lazyload: 'ondemand',
+  cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1450,
+      breakpoint: 1550,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -193,16 +225,28 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-});</script>
+});
+
+$('.ipad.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
+
+</script>
+
+
+
+
 </body>
 </html>

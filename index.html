@@ -1,17 +1,31 @@
 ---
 layout: default
 title: Home
+color-bg: black;
+color-text: white;
 ---
 
 <div class="wrap">
-  <h2>Joe Shoop is an independent interaction designer in Seattle.</h2>
-  <ul>
-    {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url | remove: "index.html" }}">{{ project.title }}</a>
-    </li>
+	<div class="home-intro">
+		<p class="lead"><em>Joe Shoop</em> is an Independent Product Designer in Seattle, specializing in interface design for screens of all shapes and sizes, and working with people and companies who are making good things.</p>
+		<p class="lead">Here are some of those things:</p>
+	</div>
+  <h2 class="projects">
+  	{% for project in site.projects %}
+    <span class="project" style="color:{{ project.color-headline }}">
+    	{% if forloop.last %}& {% endif %}
+    	<a href="{{ project.url | remove: "index.html" }}">
+    		<span class="project-name"><span class="color-white">{{ project.title }}</span></span>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+    		<span class="text-small">{{ project.roles }}</span>
+    	</a>
+      	<span class="sticky-background">
+      		<div class="wrap">
+      			<img class="sticky-background-image {{ project.thumbnail-size }}" src="{{ project.url | remove: "index.html" }}{{ project.thumbnail}}" />
+      		</div>
+      	</span>
+    </span>
     {% endfor %}
-  </ul>
+  </span></h2>
 
-  <p>Thanks for looking.</p>
+  <img class="thanks" src="/r/images/thanks.png" />
 </div>

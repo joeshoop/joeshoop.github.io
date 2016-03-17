@@ -5,7 +5,6 @@
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/r/css/slick.css"/>
 
 	<title>Joe Shoop—Booking Suite</title>
 
@@ -64,23 +63,10 @@
 	</div>
 </section>
 
-<div class="grid">
-	<div class="bg-red col">
-		<div class="wrap">
-		Booking Suite!
-		</div>
-	</div>
-</div>
-
-<div class="square grid">
-	<div class="knockout iphone col" style="background-color:#222; background-image: url(/r/images/iphone-black.png)">
-	</div>
-	<div class="knockout iphone col" style="background-color:#000; background-image: url(/r/images/iphone-black.png)">
-	</div>
-</div>
-
-<section class="copy">
-	<p><em>Booking Suite</em> is a part of Booking.com. They make software for hotels - to help manage bookings and reservations, or to create a website. I was involved with two big projects while there - one was an update to their CMS, called 'Back Office' internally. Lots of front end using scss.</p>
+<section class="lead copy">
+	<h5 class="text-small caps">Project Overview</h5>
+	<p><em>Booking Suite</em> is a part of Booking.com. They make software for hotels - to help manage bookings and reservations, and for create and managing a website.</p>
+	<p>While there, I was involved with two big projects - one was a update to their CMS, called 'Back Office' internally. Lots of front end using scss.</p>
 </section>
 
 <section class="copy">
@@ -111,7 +97,7 @@
   <a href="/projects/clipcard/">
     <div>
         <div class="wrap">
-            <h5 class="smallcaps">Next</h5>
+            <h5 class="text-small caps">Next</h5>
             <h2>ClipCard</h2>
         </div>
     </div>
@@ -133,25 +119,31 @@
 </nav>
 			</div>
 			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="#">Get&nbsp;in&nbsp;touch.</a></p>
+				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
 			</div>
 		</section>
 	</div>
 </footer>
 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
 <script type="text/javascript" src="/r/js/slick.min.js"></script>
 <script>
 
-$('.slider').slick({
+$('.iphone.slider').slick({
   dots: true,
   infinite: true,
-  speed: 200,
+  speed: 300,
+  lazyload: 'ondemand',
+  cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1450,
+      breakpoint: 1550,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -165,16 +157,28 @@ $('.slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-});</script>
+});
+
+$('.ipad.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
+
+</script>
+
+
+
+
 </body>
 </html>

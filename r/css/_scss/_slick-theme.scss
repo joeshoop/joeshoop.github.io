@@ -2,10 +2,15 @@
 
 $slick-dot-size: 20px;
 
-.slider {
-	margin-bottom:4rem;
-}
+.gallery {
+    padding: 2rem 0 0 0;
+    margin-bottom: 2rem;
+    // overflow:visible;
 
+    @media ($break-small) {
+      padding: 5vw 0 2vw 0;
+    }    
+}
 
 .slick-list {
 	overflow:visible !important;
@@ -16,16 +21,38 @@ $slick-dot-size: 20px;
     padding: 0 $spacing*2 !important;
 }
 
+.slick-track {
+    margin:0 auto;
+}
+
 .slick-slide {
 	outline:none;
-	padding:0 1rem;
+	padding:0 .5rem;
+    position:relative;
+
+    @media ($break-small) {
+        padding: 0 1rem !important;
+    }
 }
 
 .slick-slide img {
 	margin:0 auto;
-	box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
-	width:320px;
+	// box-shadow: 0 20px 100px rgba(0, 0, 0, 0.2);
+    border:2px solid rgba(0,0,0,.1);
+    box-sizing:content-box;
 	max-width:100%;
+
+    .iphone & {
+        width:320px;
+    }
+
+    .ipad & {
+        width:1024px;
+
+        @media all and (min-aspect-ratio: 4/3) {
+            max-width:110vh;
+        }
+    }
 }
 
 // Arrows
@@ -50,7 +77,6 @@ $slick-dot-size: 20px;
     transition: background 600ms cubic-bezier(0.165, 0.84, 0.44, 1);;
     &:hover, &:focus {
         outline: none;
-        // background: transparent;
         color: transparent;
         &:before {
             opacity: 1;
@@ -84,13 +110,16 @@ $slick-dot-size: 20px;
     }
 }
 
-
 // Dots
 
 .slick-dots {
     list-style: none;
     text-align: center;
-    margin-top:3rem;
+    margin-top:1rem;
+
+    @media ($break-small) {
+        margin-top:2rem;
+    }
 
     li {
         position: relative;
@@ -132,6 +161,10 @@ $slick-dot-size: 20px;
                 color:black;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+
+                .dark & {
+                    color:white;
+                }
             }
         }
         &.slick-active button:before {

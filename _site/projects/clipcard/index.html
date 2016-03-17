@@ -32,7 +32,7 @@
 	}
 	</style>
 </head>
-<body>
+<body class="no-jquery">
 <header class="header-bar">
 	<div class="wrap">
 		<section class="header-container">
@@ -120,14 +120,21 @@
 
 
 <section class="next">
-  <a href="/projects/julep/">
-    <div>
+<div class="wrap">
+  <h5 class="text-small caps">Next</h5>
+  <h2><span class="project-link" style="color:#C228B8">
+      <a href="/projects/julep/">
+          <span class="project-name"><span class="color-white">Julep</span></span>
+          <span class="text-small">UX & UI Design for iPhone</span>
+      </a>
+      <span class="sticky-background">
         <div class="wrap">
-            <h5 class="text-small caps">Next</h5>
-            <h2>Julep</h2>
+          <img class="sticky-background-image " src="/projects/julep/julep-phonehand.jpg" />
         </div>
-    </div>
-  </a>
+      </span>
+    </span>
+  </h2>
+  </div>
 </section>
 
 <footer>
@@ -154,6 +161,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>$('body').removeClass('no-jquery');</script>
 
 
 <script type="text/javascript" src="/r/js/slick.min.js"></script>

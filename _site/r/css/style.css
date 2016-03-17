@@ -123,7 +123,7 @@ table {
   src: url("/r/webfonts/309406_0_0.eot?#iefix") format("embedded-opentype"), url("/r/webfonts/309406_0_0.woff2") format("woff2"), url("/r/webfonts/309406_0_0.woff") format("woff"), url("/r/webfonts/309406_0_0.ttf") format("truetype"); }
 html {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
-  font-size: 125%;
+  font-size: 112.5%;
   -webkit-font-smoothing: antialiased; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
@@ -190,26 +190,26 @@ h1 {
       margin-top: 4.5rem; } }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.4025rem;
   line-height: 3rem;
   font-weight: bold; }
   @media (min-width: 48rem) {
     h2 {
-      font-size: 3.375rem;
+      font-size: 3.72388rem;
       line-height: 4.5rem; } }
   @media (min-width: 62rem) {
     h2 {
-      font-size: 5.0625rem;
+      font-size: 5.77201rem;
       line-height: 6rem; } }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   line-height: 1.75rem;
   margin-top: 1.5rem;
   font-weight: bold; }
   @media (min-width: 62rem) {
     h3 {
-      font-size: 2.25rem;
+      font-size: 2.4025rem;
       line-height: 3rem; } }
 
 /* Tables */
@@ -221,7 +221,7 @@ table {
 td,
 th {
   padding: 0;
-  line-height: 30px; }
+  line-height: 27px; }
 
 code {
   vertical-align: bottom; }
@@ -246,14 +246,6 @@ h5 {
     width: 2rem;
     height: 1px;
     border-bottom: 1px solid currentColor; }
-
-.copy {
-  font-size: 1rem;
-  line-height: 1.5rem; }
-  @media (min-width: 62rem) {
-    .copy {
-      font-size: 1.25rem;
-      line-height: 1.5rem; } }
 
 .hug {
   margin-top: 0; }
@@ -332,6 +324,26 @@ h5 {
 .slick-arrow.slick-hidden {
   display: none; }
 
+.no-jquery .gallery {
+  display: inline-flex;
+  width: 100%; }
+.no-jquery .slider {
+  display: inline-flex;
+  overflow: scroll;
+  padding: 0 2rem; }
+  .no-jquery .slider div {
+    margin-right: 2rem; }
+  .no-jquery .slider img {
+    border: 2px solid rgba(0, 0, 0, 0.1); }
+.no-jquery .iphone img {
+  width: 320px;
+  max-width: 80vw; }
+.no-jquery .ipad {
+  margin-right: 2rem; }
+  .no-jquery .ipad img {
+    width: 1024px;
+    max-width: 80vw; }
+
 .gallery {
   padding: 2rem 0 0 0;
   margin-bottom: 2rem; }
@@ -374,7 +386,7 @@ h5 {
 .slick-prev,
 .slick-next {
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   display: block;
   height: calc(100% - 4rem);
   width: 8vw;
@@ -635,86 +647,83 @@ header a, footer nav a {
       margin: 3rem 0 0;
       max-height: none; } }
 
-.projects .project {
+.project-link {
   position: relative;
   display: inline;
   min-height: 0; }
-  .projects .project a {
+  .project-link a {
     display: inline;
     color: currentColor;
     position: relative; }
-    .projects .project a .project-name {
+    .project-link a .project-name {
       padding: .25em .25em 0;
       margin: -.25em; }
-    .projects .project a:hover {
-      z-index: 10; }
-      .projects .project a:hover .project-name {
+    .project-link a:hover {
+      z-index: 101; }
+      .project-link a:hover .project-name {
         background: currentColor; }
-      .projects .project a:hover .text-small {
-        display: block; }
-  .projects .project .color-white {
+      @media (min-width: 62rem) {
+        .project-link a:hover .text-small {
+          display: block; } }
+  .project-link .color-white {
     color: white; }
-  .projects .project .text-small {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    color: #555;
-    margin: -1em 0 0;
-    padding: .5em 1em;
-    white-space: nowrap;
+  .project-link .text-small {
     display: none; }
-  .projects .project .sticky-background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none; }
-    .projects .project .sticky-background .wrap {
-      text-align: center; }
-    .projects .project .sticky-background-image {
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
-      position: relative;
-      max-width: calc(100% - 8rem);
-      max-height: 100vh;
-      margin: 4rem 0; }
-    .projects .project .sticky-background-image.big {
-      box-shadow: none;
-      position: relative;
-      max-width: none;
-      max-height: none;
-      margin: 0; }
-  .projects .project a:hover ~ .sticky-background {
+    @media (min-width: 62rem) {
+      .project-link .text-small {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        color: #555;
+        margin: -1em 0 0;
+        padding: .5em 1em;
+        white-space: nowrap; } }
+  .project-link .sticky-background {
+    display: none; }
+    @media (min-width: 62rem) {
+      .project-link .sticky-background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none; }
+        .project-link .sticky-background .wrap {
+          text-align: center; }
+        .project-link .sticky-background-image {
+          box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
+          position: relative;
+          max-width: calc(100% - 8rem);
+          max-height: 100vh;
+          margin: 4rem 0; }
+        .project-link .sticky-background-image.big {
+          box-shadow: none;
+          position: relative;
+          max-width: none;
+          max-height: none;
+          margin: 0; }
+        .project-link .sticky-background-image.rotate {
+          transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(50deg) rotateY(15deg) rotateZ(330deg);
+          perspective: 1000px;
+          perspective-origin: 50% 50%; } }
+  .project-link a:hover ~ .sticky-background {
     opacity: 1;
     background: rgba(125, 125, 125, 0.7);
     background: rgba(0, 0, 0, 0.7);
-    z-index: 1; }
-  .projects .project a, .projects .project .sticky-background, .projects .project .sticky-background-image {
+    z-index: 100; }
+  .project-link a, .project-link .sticky-background, .project-link .sticky-background-image {
     transition: z-index 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .next {
   color: white;
-  background: black; }
-  .next a {
-    padding: 1.5rem 0;
-    display: table;
-    width: 100%; }
-    @media (min-width: 48rem) {
-      .next a {
-        min-height: 15rem; } }
-    @media (min-width: 62rem) {
-      .next a {
-        min-height: 20rem; } }
-  .next a, .next a:visited {
-    color: currentColor; }
-  .next a > div {
-    display: table-cell;
-    vertical-align: middle; }
+  background: black;
+  padding: 5rem 0;
+  min-height: 20rem; }
   .next h5 {
     margin-bottom: 1.5rem; }
     @media (min-width: 62rem) {
@@ -782,6 +791,7 @@ form.contact {
     height: 10em; }
   form.contact .submit {
     font-family: "Campton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
     padding: 1em;
     height: auto;
     margin-top: 2rem;

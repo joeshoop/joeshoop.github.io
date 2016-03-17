@@ -12,8 +12,7 @@ color-text: white;
 	</div>
   <h2 class="projects">
   	{% for project in site.projects %}
-    <span class="project" style="color:{{ project.color-headline }}">
-    	{% if forloop.last %}& {% endif %}
+    <span class="project-link" style="color:{{ project.color-headline }}">
     	<a href="{{ project.url | remove: "index.html" }}">
     		<span class="project-name"><span class="color-white">{{ project.title }}</span></span>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
     		<span class="text-small">{{ project.roles }}</span>

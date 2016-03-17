@@ -277,41 +277,45 @@ header a, footer nav a {
 // Project Navigation
 // =========================================
 
-.projects {
+.project-link {
+  position:relative;
+  display:inline;
+  min-height:0;
 
-  .project {
-    position:relative;
+  a {
     display:inline;
-    min-height:0;
+    color:currentColor;
+    position:relative;
 
-    a {
-      display:inline;
-      color:currentColor;
-      position:relative;
+    .project-name {
+      padding: .25em .25em 0;
+      margin: -.25em;
+    }
+
+    &:hover {
+      z-index:101;
 
       .project-name {
-        padding: .25em .25em 0;
-        margin: -.25em;
+        background:currentColor;
       }
 
-      &:hover {
-        z-index:10;
-
-        .project-name {
-          background:currentColor;
-        }
-
+      @media ($break-medium) {
         .text-small {
           display:block;
         }
-      }
     }
 
-    .color-white {
-      color:white;
     }
+  }
 
-    .text-small {
+  .color-white {
+    color:white;
+  }
+
+  .text-small {
+    display:none;
+
+    @media ($break-medium) {
       position:absolute;
       top:100%;
       left:0;
@@ -320,10 +324,13 @@ header a, footer nav a {
       margin:-1em 0 0;
       padding:.5em 1em;
       white-space:nowrap;
-      display:none;
     }
+  }
 
-    .sticky-background {
+  .sticky-background {
+    display:none;
+
+    @media ($break-medium) {
       display:flex;
       align-items: center;
       justify-content: center;
@@ -354,48 +361,33 @@ header a, footer nav a {
         max-height:none;
         margin:0;
       }
-    }
 
-    a:hover ~ .sticky-background {
-      opacity:1;
-      background: rgba(125,125,125,.7);
-      background: rgba(0,0,0,.7);
-      z-index: 1;
+      &-image.rotate {
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(50deg) rotateY(15deg) rotateZ(330deg);
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+      }
     }
+  }
 
-    a, .sticky-background, .sticky-background-image {
-      transition:z-index 0s,  opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-      // animation-direction:alternate;
-    }
+  a:hover ~ .sticky-background {
+    opacity:1;
+    background: rgba(125,125,125,.7);
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+  }
+
+  a, .sticky-background, .sticky-background-image {
+    transition:z-index 0s,  opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    // animation-direction:alternate;
   }
 }
 
 .next {
   color:white;
   background:black;
-
-  a {
-    padding: $spacing 0;
-    display:table;
-    width:100%;
-
-    @media ($break-small) {
-      min-height:15rem;
-    }
-
-    @media ($break-medium) {
-      min-height:20rem;
-    }
-  }
-
-  a, a:visited {
-    color:currentColor;
-  }
-
-  a > div {
-    display:table-cell;
-    vertical-align: middle;
-  }
+  padding:5rem 0;
+  min-height:20rem;
 
   h5 {
     margin-bottom:$spacing;
@@ -496,6 +488,7 @@ form.contact {
 
   .submit {
     font-family:$headerFontStack;
+    font-weight:bold;
     padding:1em;
     height:auto;
     margin-top:2rem;

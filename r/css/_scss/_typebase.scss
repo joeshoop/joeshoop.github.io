@@ -3,12 +3,12 @@
 $baseFontStack:"Roboto Mono", Helvetica, Arial, sans-serif;
 $headerFontStack:"Campton", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$baseFontSize:20; // in px
+$baseFontSize:18; // in px
 $baseLineHeight:1.5;
 $leading:$baseLineHeight * 1rem;
 $minimumFontSize:10; // in px
 
-$scale:1.5;
+$scale:1.55;
 $mobile-scale: 1.25;
 
 @function exponent($base, $exponent) {
@@ -220,16 +220,6 @@ h5 {
     }
 }
 
-
-.copy {
-    font-size: 1rem;
-    line-height: $leading * 1;
-
-    @media ($break-medium) {
-        font-size:1.25rem;
-        line-height: $leading * 1;
-    }
-}
 // Hug the block above you
 
 .hug {

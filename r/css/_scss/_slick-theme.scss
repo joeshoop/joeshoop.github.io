@@ -2,6 +2,44 @@
 
 $slick-dot-size: 20px;
 
+.no-jquery {
+    .gallery {
+        display:inline-flex;
+        width:100%;
+    }
+
+    .slider {
+        display:inline-flex;
+        overflow:scroll;
+        padding:0 2rem;
+
+        div {
+            margin-right:2rem;
+        }
+
+        img {
+            border:2px solid rgba(0,0,0,.1);
+        }
+    }
+
+    .iphone {
+
+        img {
+            width: 320px;
+            max-width: 80vw;
+        }
+    }
+
+    .ipad {
+        margin-right:2rem;
+        
+        img {
+            width:1024px;
+            max-width: 80vw;
+        }
+    }
+}
+
 .gallery {
     padding: 2rem 0 0 0;
     margin-bottom: 2rem;
@@ -60,7 +98,7 @@ $slick-dot-size: 20px;
 .slick-prev,
 .slick-next {
 	position: absolute;
-    z-index:1000;
+    z-index:10;
     display: block;
     height: calc(100% - 4rem);
     width: 8vw;

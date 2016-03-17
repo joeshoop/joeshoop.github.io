@@ -32,7 +32,7 @@
 	}
 	</style>
 </head>
-<body>
+<body class="no-jquery">
 <header class="header-bar">
 	<div class="wrap">
 		<section class="header-container">
@@ -85,7 +85,7 @@
 		<div><img src="bluenile-filters-01.jpg" /></div>
 		<div><img src="bluenile-diamond-detail.jpg" /></div>
 		<div><img src="bluenile-ringbuilder-02.jpg" /></div>
-		<div><img src="bluenile-settingdetail-01.png" /></div>
+		<div><img src="bluenile-settingdetail-01.jpg" /></div>
 		<div><img src="bluenile-ringbuilder-03.jpg" /></div>
 	</div>
 </section>
@@ -128,14 +128,21 @@
 
 
 <section class="next">
-  <a href="/projects/clipcard/">
-    <div>
+<div class="wrap">
+  <h5 class="text-small caps">Next</h5>
+  <h2><span class="project-link" style="color:#D21E29">
+      <a href="/projects/clipcard/">
+          <span class="project-name"><span class="color-white">ClipCard</span></span>
+          <span class="text-small">Responsive Web, Interface Design</span>
+      </a>
+      <span class="sticky-background">
         <div class="wrap">
-            <h5 class="text-small caps">Next</h5>
-            <h2>ClipCard</h2>
+          <img class="sticky-background-image big" src="/projects/clipcard/clipcard-thumbnail.png" />
         </div>
-    </div>
-  </a>
+      </span>
+    </span>
+  </h2>
+  </div>
 </section>
 
 <footer>
@@ -162,6 +169,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>$('body').removeClass('no-jquery');</script>
 
 
 <script type="text/javascript" src="/r/js/slick.min.js"></script>

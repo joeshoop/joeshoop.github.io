@@ -32,7 +32,7 @@
 	}
 	</style>
 </head>
-<body>
+<body class="no-jquery">
 <header class="header-bar">
 	<div class="wrap">
 		<section class="header-container">
@@ -142,14 +142,21 @@
 
 
 <section class="next">
-  <a href="/projects/bluenile/">
-    <div>
+<div class="wrap">
+  <h5 class="text-small caps">Next</h5>
+  <h2><span class="project-link" style="color:#152753">
+      <a href="/projects/bluenile/">
+          <span class="project-name"><span class="color-white">Blue Nile</span></span>
+          <span class="text-small">UX & UI Design for iPhone</span>
+      </a>
+      <span class="sticky-background">
         <div class="wrap">
-            <h5 class="text-small caps">Next</h5>
-            <h2>Blue Nile</h2>
+          <img class="sticky-background-image big" src="/projects/bluenile/bluenile-thumbnail.png" />
         </div>
-    </div>
-  </a>
+      </span>
+    </span>
+  </h2>
+  </div>
 </section>
 
 <footer>
@@ -176,6 +183,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>$('body').removeClass('no-jquery');</script>
 
 
 <script type="text/javascript" src="/r/js/slick.min.js"></script>

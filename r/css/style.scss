@@ -291,8 +291,8 @@ header a, footer nav a {
     position:relative;
 
     .project-name {
-      padding: 1.5rem 1.5rem 1rem;
-      margin: -1.5rem;
+      padding: 1.5rem 0 1rem;
+      margin: -1.5rem 0;
     }
 
     &:hover {
@@ -300,6 +300,7 @@ header a, footer nav a {
 
       .project-name {
         background:currentColor;
+        box-shadow: 1.5rem 0 0 currentColor, -1.5rem 0 0 currentColor, 0 60px 80px rgba(0,0,0,.5);
       }
 
       @media ($break-medium) {
@@ -321,10 +322,9 @@ header a, footer nav a {
     @media ($break-medium) {
       position:absolute;
       top: calc(100% + 1rem);
-      left:0;
+      left:-1.5rem;
       background:white;
       color:#555;
-      margin:-1em 0 0;
       padding:.5em 1em;
       white-space:nowrap;
     }

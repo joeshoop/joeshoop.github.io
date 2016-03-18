@@ -174,7 +174,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Campton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Campton-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.5rem; }
@@ -191,8 +191,7 @@ h1 {
 
 h2 {
   font-size: 2.4025rem;
-  line-height: 3rem;
-  font-weight: bold; }
+  line-height: 3rem; }
   @media (min-width: 48rem) {
     h2 {
       font-size: 3.72388rem;
@@ -205,8 +204,7 @@ h2 {
 h3 {
   font-size: 1.55rem;
   line-height: 1.75rem;
-  margin-top: 1.5rem;
-  font-weight: bold; }
+  margin-top: 1.5rem; }
   @media (min-width: 62rem) {
     h3 {
       font-size: 2.4025rem;
@@ -658,8 +656,8 @@ header a, footer nav a {
     color: currentColor;
     position: relative; }
     .project-link a .project-name {
-      padding: .25em .25em 0;
-      margin: -.25em; }
+      padding: 1.5rem 1.5rem 1rem;
+      margin: -1.5rem; }
     .project-link a:hover {
       z-index: 101; }
       .project-link a:hover .project-name {
@@ -674,7 +672,7 @@ header a, footer nav a {
     @media (min-width: 62rem) {
       .project-link .text-small {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 1rem);
         left: 0;
         background: white;
         color: #555;
@@ -795,7 +793,7 @@ form.contact {
   form.contact .show + textarea {
     height: 10em; }
   form.contact .submit {
-    font-family: "Campton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Campton-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     padding: 1em;
     height: auto;

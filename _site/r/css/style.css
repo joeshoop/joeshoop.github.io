@@ -543,6 +543,7 @@ header a, footer nav a {
     opacity: 1; }
 
 .header-container {
+  height: 4.5rem;
   min-height: 4.5rem; }
 
 @media (min-width: 62rem) {
@@ -558,6 +559,7 @@ header a, footer nav a {
   min-height: 100vh; }
   .project-header {
     display: table;
+    height: calc(50vh - (1.5rem * 3));
     min-height: calc(50vh - (1.5rem * 3));
     padding: 1.5rem 0;
     width: 100%; }
@@ -770,7 +772,6 @@ form.contact {
     outline: none;
     font-size: 1rem;
     padding: 1.75em 0 0.5em 0;
-    height: 3.25rem;
     background: transparent;
     color: currentColor; }
     form.contact input + .icon-valid, form.contact textarea + .icon-valid {

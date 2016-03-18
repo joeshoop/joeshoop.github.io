@@ -1,7 +1,7 @@
 /*! Typebase.scss v0.1.0 | MIT License */
 
 $baseFontStack:"Roboto Mono", Helvetica, Arial, sans-serif;
-$headerFontStack:"Campton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerFontStack:"Campton-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $baseFontSize:18; // in px
 $baseLineHeight:1.5;
@@ -152,7 +152,6 @@ h1 {
 h2 {
     font-size: ms(3);
     line-height: $leading * 2;
-    font-weight:bold;
 
     @media ($break-small) {
         font-size:ms(4);
@@ -168,7 +167,6 @@ h3 {
     font-size: ms(2);
     line-height: 1.75rem;
     margin-top:$leading;
-    font-weight:bold;
 
     @media ($break-medium) {
         font-size:ms(3);

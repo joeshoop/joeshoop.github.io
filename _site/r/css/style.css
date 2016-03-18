@@ -708,7 +708,11 @@ header a, footer nav a {
           position: relative;
           max-width: none;
           max-height: none;
-          margin: 0; }
+          margin: 0;
+          -webkit-filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.8));
+          filter: url(#drop-shadow);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=40, Color='#000')";
+          filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=40, Color='#000')"; }
         .project-link .sticky-background-image.rotate {
           transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(50deg) rotateY(15deg) rotateZ(330deg);
           perspective: 1000px;

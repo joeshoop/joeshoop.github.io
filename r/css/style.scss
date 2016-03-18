@@ -363,6 +363,11 @@ header a, footer nav a {
         max-width:none;
         max-height:none;
         margin:0;
+
+        -webkit-filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8));
+        filter: url(#drop-shadow);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=40, Color='#000')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=40, Color='#000')";
       }
 
       &-image.rotate {

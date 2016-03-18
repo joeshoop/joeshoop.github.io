@@ -156,12 +156,12 @@ h2 {
 
     @media ($break-small) {
         font-size:ms(4);
-        line-height: $leading * 3;
+        line-height: $leading * 3.125;
     }
 
     @media ($break-medium) {
         font-size:ms(5);
-        line-height: $leading * 4;
+        line-height: $leading * 4.25;
     }
 }
 h3 {

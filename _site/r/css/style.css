@@ -196,11 +196,11 @@ h2 {
   @media (min-width: 48rem) {
     h2 {
       font-size: 3.72388rem;
-      line-height: 4.5rem; } }
+      line-height: 4.6875rem; } }
   @media (min-width: 62rem) {
     h2 {
       font-size: 5.77201rem;
-      line-height: 6rem; } }
+      line-height: 6.375rem; } }
 
 h3 {
   font-size: 1.55rem;

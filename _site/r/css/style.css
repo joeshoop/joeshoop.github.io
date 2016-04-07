@@ -833,6 +833,8 @@ a {
   left: 0;
   opacity: 0;
   pointer-events: none; }
+  .project-thumbnail .wrap {
+    text-align: center; }
   @media (min-width: 62rem) {
     .project-thumbnail-image {
       position: relative;

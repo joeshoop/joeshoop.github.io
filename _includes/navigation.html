@@ -1,5 +1,4 @@
 {% assign current = page.url | downcase | split: '/' %}
-
 <nav>
   <ul>
     <li {% if current[1] == 'projects' or page.url == "/" %}class='current'{% endif %}><a href='/'>Work</a></li>

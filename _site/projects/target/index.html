@@ -1,46 +1,66 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—Target</title>
 
 	<style>
 
-	body {
-		background: #fff;
-		color: #000;
-	}
-
-	.project-header, header {
+	.page-container {
 		background: #fff;
 		color: #000;
 	}
 
 	
-	.project-header h2 {
-		color: #cc0000;
+
+	a {
+		border-color:#cc0000;
 	}
+
+	nav li.current a:after {
+      background-color:#cc0000;
+    }
+
+    .project-container .project-thumbnail {
+    	background-color:#cc0000;
+    }
+
+	h5:after {
+  		background:#cc0000;
+  	}
+
+  	.next a:hover {
+		color: #ff5500 ;
+	}
+
+	::selection {
+  		background:#cc0000;
+		color:white;
+		}
+
+	.next h5:after {
+  		background:#ff5500;
+  	}
 	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:#000;
+  	}
 	</style>
 </head>
-<body class="no-jquery">
+
+
+<body class="no-jquery page-projects target">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
@@ -49,52 +69,50 @@
     <li ><a href='/contact'>Contact</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
+
 </header>
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>Target </h2>
-			<span class="text-small">Interface Design for iPhone & iPad, Icon Illustration</span>
-		</div>
-		<div class="pusher">
-		</div>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image big" src="/projects/target/target-ipad-icon-text.png" />
+		</span>
 	</div>
+	<section class="lead">
+	<div class="wrap">
+		<h3>Target for iPad & iPhone</h3>
+		<p>In 2010, shortly after Apple announced the original iPad, Target and Übermind worked together to launch Target's first <span class="highlight">iPad App</span>. The plan was to recreate the Weekly Ad in the form of an app, complete with animated page turning, a coffee table metaphor, and all the skeuomorphic design that goes along with&nbsp;that.</p>
+	</div>
+</section>
+
+<section style="background-color:#f0f0f0;">
+	<section>
+		<div class="wrap">
+			<div class="copy">
+				<h5>Making Lemonade</h5>
+				<h3>Working with Restrictions</h3>
+				<p>Target was working on a major overhaul of the APIs that would be used in their apps, but they wouldn't be ready for almost a&nbsp;year.</p>
+				<p>What we did have available were the services for the <span class="highlight">Weekly&nbsp;Ad</span> and the <span class="highlight">Store&nbsp;Finder</span>. Because of these technical limitations, the primary goal of the app became brand exposure, and to get people in-store. We wanted to create a rich-feeling app experience even though the app would not include many of the features consumers have come to expect from their&nbsp;apps.</p>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="ipad slider">
+			<div><img src="target-ipad-home.jpg" /></div>
+			<div><img src="target-ipad-lists.jpg" /></div>
+			<div><img src="target-ipad-weeklyad-frontpage.jpg" /></div>
+			<div><img src="target-ipad-weeklyad-open.jpg" /></div>
+			<div><img src="target-ipad-findstore.jpg" /></div>
+	</section>
 </section>
 
 <section>
-	<div class="full cover" style="background-image:url(target-ipads-isometric.jpg)">
+	<div class="wrap">	
+		<div class="copy">
+			<h5>A Feature Update</h5>
+			<h3>Adding Browsing & Searching</h3>
+			<p>Later, some of the APIs started to become available, and we were able to add <span class="highlight">Product&nbsp;Browsing</span> and <span class="highlight">Searching</span> to the app. The app was due for a full redesign to account for these new features, but in the meantime, we wanted to get them into the existing app as quickly as we could.</p>
+		</div>
 	</div>
-</section>
-
-<section class="lead copy">
-	<h5 class="text-small caps">Project Overview</h5>
-	<h3>Sunday Ad on your iPad</h3>
-	<p>In 2010, shortly after Apple announced the original iPad, Target and Übermind worked together to launch Target's first <span class="highlight">iPad App</span>. The plan was to recreate the Weekly Ad in the form of an app, complete with animated page turning, a coffee table metaphor, and all the skeumoric design that goes with it.</p>
-</section>
-
-<section class="copy">
-<h5 class="text-small caps">Making Lemonade</h5>
-<h3>Working with Restrictions</h3>
-<p>Target was working on a major overhaul of the APIs that would be used in their apps, but they wouldn't be ready for almost a year.</p>
-<p>What we did have available were the services for the <span class="highlight">Weekly&nbsp;Ad</span> and the <span class="highlight">Store&nbsp;Finder</span>. Because of these technical limitations, the primary goal of the app became brand exposure, and to get people in-store. We wanted to create a rich-feeling app experience even though the app would not include many of the features consumers have come to expect from their apps.</p>
-</section>
-
-<section class="gallery">
-	<div class="ipad slider">
-		<div><img src="target-ipad-home.jpg" /></div>
-		<div><img src="target-ipad-lists.jpg" /></div>
-		<div><img src="target-ipad-weeklyad-frontpage.jpg" /></div>
-		<div><img src="target-ipad-weeklyad-open.jpg" /></div>
-		<div><img src="target-ipad-findstore.jpg" /></div>
-</section>
-
-<section class="copy">
-	<h5 class="text-small caps">A Feature Update</h5>
-	<h3>Adding Browsing & Searching</h3>
-	<p>Later, some of the APIs started to become available, and we were able to add <span class="highlight">Product&nbsp;Browsing</span> and <span class="highlight">Searching</span> to the app. The app was due for a full redesign to account for these new features, but in the meantime, we wanted to get them into the existing app as quickly as we could.</p>
 </section>
 
 <section class="gallery">
@@ -104,12 +122,16 @@
 	</div>
 </section>
 
-<section class="copy">
-	<h5 class="text-small caps">Designing for Screens</h5>
-	<h3>Lessons Learned</h3>
-	<p>People much more eloquent than I have written at great length about the issues with skeuomorphic design, many of which I experienced first-hand working on this project. It is fun to look back and remember how much time was spent trying to stick with the visual metaphors we had chosen. Textures had to look realistic, shadows and highlights had to be properly aligned to an imagined off-screen light source, and the objects on screen had to adhere to the physical properties of their real-world analogues. Things couldn't pop into existence, or scale up or down, or fade away. They had to slide around in 2D space, and they couldn't overlap in certain ways as they did. All for the sake of 'realism'.</p>
-	<p>I remember many conversations about how certain things should work - not because of any UX best practice, but because of the self-imposed limitations of maintaing the skeomorphic metaphor.</p>
-	<p>In the end, I found that shadow and texture can still help a great deal in directing attention or implying hierarchy, but they are tools rather than a foundation, and they should be used only with purpose and reason.
+<section style="background-color:#f0f0f0;">
+	<div class="wrap">
+		<div class="copy">
+			<h5>Designing for Screens</h5>
+			<h3>Lessons Learned</h3>
+			<p>People much more eloquent than I have written at great length about the issues with skeuomorphic design, many of which I experienced first-hand working on this project. It is fun to look back and remember how much time was spent trying to stick with the visual metaphors we had chosen. Textures had to look realistic, shadows and highlights had to be properly aligned to an imagined off-screen light source, and the objects on screen had to adhere to the physical properties of their real-world analogues. Things couldn't pop into existence, or scale up or down, or fade away. They had to slide around in 2D space, and they couldn't overlap in certain ways as they did. All for the sake of 'realism'.</p>
+			<p>I remember many conversations about how certain things should work - not because of any UX best practice, but because of the self-imposed limitations of maintaing the skeomorphic metaphor.</p>
+			<p>In the end, I found that shadow and texture can still help a great deal in directing attention or implying hierarchy, but they are tools rather than a foundation, and they should be used only with purpose and reason.</p>
+		</div>
+	</div>
 </section>
 
 <section style="background-image: linear-gradient(-45deg, #651013 0%, #CB0F09 100%);">
@@ -120,21 +142,28 @@
 	</div>
 </section>
 
-<section class="copy">
-	<h5 class="text-small caps">A Smaller Screen</h5>
-	<h3>A new Target App for iPhone, too</h3>
-	<p>We also worked with Target to update and redesign their <span class="highlight">iPhone app</span>, which included some new features like shopping lists and a store finder. We designed a custom navigation panel, which allowed for six sections, one more than would be possible on the standard iOS tab bar. At the time, hamburger menus were just starting to appear in other apps, but we felt that enforcing an upper limit of six was a better solution because it would help keep the app more focused.</p>
-</section>
+<section>
 
-<section class="gallery">
-	<div class="iphone slider">
-		<div><img src="target-iphone-drawer.jpg" /></div>
-		<div><img src="target-iphone-featured.jpg" /></div>
-		<div><img src="target-iphone-baby.jpg" /></div>
-		<div><img src="target-iphone-storemap.jpg" /></div>
-		<div><img src="target-iphone-weeklyad-electronics.jpg" /></div>
-		<div><img src="target-iphone-weeklyad-menu.jpg" /></div>
+	<div class="wrap">
+		<div class="copy">
+			<h5>A Smaller Screen</h5>
+			<h3>A new Target App for iPhone, too</h3>
+			<p>We also worked with Target to update and redesign their <span class="highlight">iPhone app</span>, which included some new features like shopping lists and a store finder. We designed a custom navigation panel, which allowed for six sections, one more than would be possible on the standard iOS tab bar. At the time, hamburger menus were just starting to appear in other apps, but we felt that enforcing an upper limit of six was a better solution because it would help keep the app more focused.</p>
+		</div>
+	</div>
+
+	<div class="gallery">
+		<div class="iphone slider">
+			<div><img src="target-iphone-drawer.jpg" /></div>
+			<div><img src="target-iphone-featured.jpg" /></div>
+			<div><img src="target-iphone-baby.jpg" /></div>
+			<div><img src="target-iphone-storemap.jpg" /></div>
+			<div><img src="target-iphone-weeklyad-electronics.jpg" /></div>
+			<div><img src="target-iphone-weeklyad-menu.jpg" /></div>
+	</div>
+
 </section>
+</div>
 
 
   
@@ -142,45 +171,25 @@
 
 
 <section class="next">
-<div>
-<div class="wrap">
-  <h5 class="text-small caps">Next</h5>
-  <h2><span class="project-link" style="color:#ff5500">
-      <a href="/projects/blix/">
-          <span class="project-name"><span class="color-white">Blix</span></span>
-          <span class="text-small">iPhone UX & UI, Web Design, Branding</span>
-      </a>
-      <span class="sticky-background">
-        <div class="wrap">
-          <img class="sticky-background-image " src="/projects/blix/blix-device-1.jpg" />
-        </div>
-      </span>
-    </span>
-  </h2>
-  </div>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:#ff5500">
+          <a class="project-wrap" href="/projects/blix/">
+              <span class="project-name"><span class="color-text">Blix</span></span>
+              <span class="project-categories">iPhone UX & UI, Web Design, Branding</span>
+          </a>
+        </span>
+      </h2>
+    </div>
   </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image big" src="/projects/blix/blix-thumbnail.png" />
+  </div>
+</span>
 
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li class='current'><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li ><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
 
 
 <script>
@@ -206,31 +215,31 @@ $('.iphone.slider').slick({
   speed: 300,
   lazyload: 'ondemand',
   cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
 });
 
 $('.ipad.slider').slick({
@@ -247,5 +256,6 @@ $('.ipad.slider').slick({
 
 
 
+</div>
 </body>
 </html>

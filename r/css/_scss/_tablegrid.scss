@@ -1,3 +1,59 @@
+.full {
+  height: 100vh;
+  max-height:100vmin;
+  min-height:50vw;
+  z-index: 0;
+}
+
+.half {
+  min-height:50vmin;
+  // max-height:100vw;
+
+  img {
+    width:100%;
+  }
+}
+
+.single {
+  img {
+    max-width:100%;
+    display:block;
+    margin:0 auto;
+  }
+}
+
+.photo img {
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+  margin:4rem 0;
+  float:left;
+  box-shadow:0 40px 80px rgba(0,0,0,.2);
+}
+
+.cover, .contain {
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  background-size:cover;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.half-img {
+  margin-left: $spacing;
+  max-height:100vmin;
+
+  @media ($break-small) {
+    margin:$spacing*2 0 0;
+    max-height:none;
+  }
+}
+
 //
 // Grid classes
 //

@@ -1,42 +1,36 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—Contact</title>
 
 	<style>
 
-	body {
-		background: ;
-		color: ;
-	}
-
-	.project-header, header {
-		background: ;
-		color: ;
+	.page-container {
+		background: #222;
+		color: white;
 	}
 
 	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:white;
+  	}
 	</style>
 </head>
-<body class="no-jquery">
+
+
+<body class="no-jquery page-contact contact">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
@@ -45,62 +39,42 @@
     <li class='current'><a href='/contact'>Contact</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
+
 </header>
-<section class="copy">
-<h5 class="text-small caps">Email Me</h5>
-<h3>Say Hey!</h3>
-<form id="form-contact" class="contact" action="https://getsimpleform.com/messages?form_api_token=9495f7294a9ac21bc29d0749a26d93da" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <!-- <input type='hidden' name='redirect_to' value='/contact#thankyou' /> -->
-  <!-- all your input fields here.... -->
+<section class="lead">
+<div class="wrap">
 
-  <div class="field--wrapper">
-	  <label for="name">Your Name</label>
-	  <input class="name" type="text" pattern=".+" placeholder="Your Name" name="name" required>
-	  <span class="icon-valid"></span>
-  </div>
+  <h3>Say Hey!</h3>
+  <form id="form-contact" class="contact" action="https://getsimpleform.com/messages?form_api_token=9495f7294a9ac21bc29d0749a26d93da" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <!-- <input type='hidden' name='redirect_to' value='/contact#thankyou' /> -->
+    <!-- all your input fields here.... -->
 
-  <div class="field--wrapper">
-	  <label for="email">Your Email</label>
-	  <input class="email" type="email" pattern="^.+@.+\..+" placeholder="Your Email" name="email" required>
-	  <span class="icon-valid"></span>
-  </div>
+    <div class="field--wrapper">
+  	  <label for="name">Your Name</label>
+  	  <input class="name" type="text" pattern=".+" placeholder="Your Name" name="name" required>
+  	  <span class="icon-valid"></span>
+    </div>
 
-  <div class="field--wrapper">
-	<label for="message">A Message</label>
-  	<textarea class="message" pattern=".+" placeholder="A Message" name="message" required></textarea>
-  	<span class="icon-valid"></span>
-  </div>
+    <div class="field--wrapper">
+  	  <label for="email">Your Email</label>
+  	  <input class="email" type="email" pattern="^.+@.+\..+" placeholder="Your Email" name="email" required>
+  	  <span class="icon-valid"></span>
+    </div>
 
-  <input class="submit" type='submit' value='Send It!' disabled/>
-</form>
+    <div class="field--wrapper">
+  	<label for="message">A Message</label>
+    	<textarea class="message" pattern=".+" placeholder="A Message" name="message" required></textarea>
+    	<span class="icon-valid"></span>
+    </div>
 
-<p>Alternatively, you can just <a href="mailto:&#106;&#111;&#101;&#064;&#106;&#111;&#101;&#115;&#104;&#111;&#111;&#112;&#046;&#099;&#111;&#109;">send me an email</a>, or follow me on <a href="https://twitter.com/joeshoop">Twitter</a>, <a href="https://www.instagram.com/joeshoop/">Instagram</a> & <a href="https://dribbble.com/joeshoop">Dribbble</a>.</p>
+    <input class="submit" type='submit' value='Send It!' disabled/>
+  </form>
+
+  <p>Alternatively, you can just <a href="mailto:&#106;&#111;&#101;&#064;&#106;&#111;&#101;&#115;&#104;&#111;&#111;&#112;&#046;&#099;&#111;&#109;">send me an email</a>, or follow me on <a href="https://twitter.com/joeshoop">Twitter</a>, <a href="https://www.instagram.com/joeshoop/">Instagram</a> & <a href="https://dribbble.com/joeshoop">Dribbble</a>.</p>
+</div>
 </section>
       
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li ><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li class='current'><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
 
 
 <script>
@@ -301,5 +275,6 @@ $(function(){
 </script>
 
 
+</div>
 </body>
 </html>

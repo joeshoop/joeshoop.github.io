@@ -17,22 +17,22 @@
 
 {% if next.url %}
 <section class="next">
-<div>
-<div class="wrap">
-  <h5 class="text-small caps">Next</h5>
-  <h2><span class="project-link" style="color:{{ next.color-headline }}">
-      <a href="{{ next.url | remove: "index.html" }}">
-          <span class="project-name"><span class="color-white">{{ next.title }}</span></span>
-          <span class="text-small">{{ next.roles }}</span>
-      </a>
-      <span class="sticky-background">
-        <div class="wrap">
-          <img class="sticky-background-image {{ next.thumbnail-size }}" src="{{ next.url | remove: "index.html" }}{{ next.thumbnail}}" />
-        </div>
-      </span>
-    </span>
-  </h2>
-  </div>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:{{ next.color-headline }}">
+          <a class="project-wrap" href="{{ next.url | remove: "index.html" }}">
+              <span class="project-name"><span class="color-text">{{ next.title }}</span></span>
+              <span class="project-categories">{{ next.roles }}</span>
+          </a>
+        </span>
+      </h2>
+    </div>
   </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image {{ next.thumbnail-size }}" src="{{ next.url | remove: "index.html" }}{{ next.thumbnail}}" />
+  </div>
+</span>
 {% endif %}

@@ -1,7 +1,7 @@
 #main {
   animation-name: fadeIn;
   animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-timing-function: $animation-timing-function;
   animation-duration: 1s;
 }
 
@@ -9,16 +9,30 @@
   animation-direction:reverse;
 }
 
-@keyframes fadeIn {
+@keyframes projectThumbnailIn {
     0% {
-      opacity:0;
+      left:0;
     }
     100% {
-      opacity:1;
+      left:50%;
     }
 }
 
-.is-exiting .next {
-    min-height:100vh;
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+      transform:translateY(2rem);
+    }
+    100% {
+      opacity:100%;
+      transform:translateY(0);
+    }
+}
+
+.is-exiting {
+
+  .project-thumbnail {
+    background:rgba(0,0,0,1);
+  }
 }
 

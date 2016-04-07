@@ -1,46 +1,66 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—ClipCard</title>
 
 	<style>
 
-	body {
-		background: #E5EFFB;
-		color: #000;
-	}
-
-	.project-header, header {
+	.page-container {
 		background: #E5EFFB;
 		color: #000;
 	}
 
 	
-	.project-header h2 {
-		color: #D21E29;
+
+	a {
+		border-color:#D10E17;
 	}
+
+	nav li.current a:after {
+      background-color:#D10E17;
+    }
+
+    .project-container .project-thumbnail {
+    	background-color:#D10E17;
+    }
+
+	h5:after {
+  		background:#D10E17;
+  	}
+
+  	.next a:hover {
+		color: #C228B8 ;
+	}
+
+	::selection {
+  		background:#D10E17;
+		color:white;
+		}
+
+	.next h5:after {
+  		background:#C228B8;
+  	}
 	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:#000;
+  	}
 	</style>
 </head>
-<body class="no-jquery">
+
+
+<body class="no-jquery page-projects clipcard">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
@@ -49,41 +69,52 @@
     <li ><a href='/contact'>Contact</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
+
 </header>
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>ClipCard </h2>
-			<span class="text-small">Responsive Web, Interface Design</span>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image big" src="/projects/clipcard/clipcard-thumbnail.png" />
+		</span>
+	</div>
+	<section class="lead">
+	<div class="wrap">
+		<h3>ClipCard</h3>
+		<p><span class="highlight">ClipCard</span> was making it easier to find your cloud files. By combining services like Dropbox and Google Drive (and many more) into one searchable UI, you could search all your cloud-based stuff at once, and actually find the thing you were looking for.</p>
+
+		<p>I worked with the ClipCard team to help clarify their search UX.</p>
+	</div>
+</section>
+
+<section class="light">
+	<div class="gallery">
+		<div class="iphone slider">
+			<div><img src="clipcard-phone-01.jpg" /></div>
+			<div><img src="clipcard-phone-02.jpg" /></div>
+			<div><img src="clipcard-phone-03.jpg" /></div>
+			<div><img src="clipcard-phone-04.jpg" /></div>
+			<div><img src="clipcard-phone-05.jpg" /></div>
+			<div><img src="clipcard-phone-06.jpg" /></div>
+			<div><img src="clipcard-phone-07.jpg" /></div>
 		</div>
-		<div class="pusher">
+	</div>
+	<div class="wrap">
+		<div class="copy">
+		<h5>Responsive Web App</h5>
+		<p>ClipCard is built around the metadata from your files, so the search needed to be flexible and powerful, while retaining a sense of clarity. The goal was to surface the complexity only when needed, and otherwise keep it hidden.</p>
 		</div>
 	</div>
 </section>
 
-<section class="lead copy">
-	<h5 class="text-small caps">Project Overview</h5>
-	<h3>One Search to Rule Them All</h3>
-	<p><em>ClipCard</em> was making it easier to find your cloud files. By combining services like Dropbox and Google Drive (and many more) into one searchable UI, you could search all your cloud-based stuff at once, and would no longer have to remember where, among the seemingly endless cloud storage services, you would find your file.</p>
-
-	<p>I worked with ClipCard to help clarify their search UX.</p>
-</section>
-
-<section class="gallery">
-	<div class="iphone slider">
-		<div><img src="clipcard-phone-01.jpg" /></div>
-		<div><img src="clipcard-phone-02.jpg" /></div>
-		<div><img src="clipcard-phone-03.jpg" /></div>
-		<div><img src="clipcard-phone-04.jpg" /></div>
-		<div><img src="clipcard-phone-05.jpg" /></div>
-		<div><img src="clipcard-phone-06.jpg" /></div>
-		<div><img src="clipcard-phone-07.jpg" /></div>
+<section>
+	<div class="wrap">
+		<div class="copy">
+		<h5>Responsive Web App</h5>
+		<h3>Scaling Up</h3>
+		<p>ClipCard was being developed mobile-first, but it would also need to work on larger screens. I also helped with some Wireframes for larger sizes.</p>
+		</div>
 	</div>
 </section>
-
 <section class="gallery">
 	<div class="ipad slider">
 		<div><img src="clipcard-tablet-01.jpg" /></div>
@@ -92,6 +123,7 @@
 		<div><img src="clipcard-tablet-04.jpg" /></div>
 	</div>
 </section>
+</div>
 
 
   
@@ -99,45 +131,25 @@
 
 
 <section class="next">
-<div>
-<div class="wrap">
-  <h5 class="text-small caps">Next</h5>
-  <h2><span class="project-link" style="color:#C228B8">
-      <a href="/projects/julep/">
-          <span class="project-name"><span class="color-white">Julep</span></span>
-          <span class="text-small">UX & UI Design for iPhone</span>
-      </a>
-      <span class="sticky-background">
-        <div class="wrap">
-          <img class="sticky-background-image " src="/projects/julep/julep-thumbnail.jpg" />
-        </div>
-      </span>
-    </span>
-  </h2>
-  </div>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:#C228B8">
+          <a class="project-wrap" href="/projects/julep/">
+              <span class="project-name"><span class="color-text">Julep</span></span>
+              <span class="project-categories">UX & UI Design for iPhone</span>
+          </a>
+        </span>
+      </h2>
+    </div>
   </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image big" src="/projects/julep/julep-thumbnail.png" />
+  </div>
+</span>
 
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li class='current'><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li ><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
 
 
 <script>
@@ -163,31 +175,31 @@ $('.iphone.slider').slick({
   speed: 300,
   lazyload: 'ondemand',
   cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
 });
 
 $('.ipad.slider').slick({
@@ -204,5 +216,6 @@ $('.ipad.slider').slick({
 
 
 
+</div>
 </body>
 </html>

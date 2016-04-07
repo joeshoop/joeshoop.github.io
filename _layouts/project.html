@@ -1,17 +1,13 @@
 ---
 layout: default
 ---
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>{{ page.title }} {{ page.subtitle }}</h2>
-			<span class="text-small">{{ page.roles }}</span>
-		</div>
-		<div class="pusher">
-		</div>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image {{ page.thumbnail-size }}" src="{{ page.url | remove: "index.html" }}{{ page.thumbnail}}" />
+		</span>
 	</div>
-</section>
-
-{{ content }}
+	{{ content }}
+</div>
 
 {% include project-navigation.html %}

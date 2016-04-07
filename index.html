@@ -1,25 +1,27 @@
 ---
 layout: default
 title: Home
-color-bg: black;
-color-text: white;
+color-bg: '#222'
+color-text: white
 ---
 
-<div class="wrap">
-	<div class="home-intro">
-		<p class="lead"><em>Joe Shoop</em> is an Independent Product Designer in Seattle, specializing in interface design for screens of all shapes and sizes, and working with people and companies who are making good things.</p>
-		<p class="lead">Here are some of those things:</p>
+<div class="lead">
+  <div class="wrap">
+		<p><em>Joe Shoop</em> is an Independent Product Designer in Seattle who specializes in interface design for screens of all shapes and sizes, and works with people and companies who are making good&nbsp;things.</p>
+		<p>Here are some of those things:</p>
 	</div>
+</div>
+<div class="wrap">
   <h2 class="projects">
   	{% for project in site.projects %}
-    <span class="project-link" style="color:{{ project.color-headline }}">
-    	<a href="{{ project.url | remove: "index.html" }}">
-    		<span class="project-name"><span class="color-white">{{ project.title }}</span></span>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
-    		<span class="text-small">{{ project.roles }}</span>
+    <span class="project-title" style="color:{{ project.color-headline }}">
+    	<a class="project-wrap" href="{{ project.url | remove: "index.html" }}">
+    		<span class="project-name"><span class="color-text">{{ project.title }}</span></span>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+    		<span class="project-categories">{{ project.roles }}</span>
     	</a>
-      	<span class="sticky-background">
+      	<span class="project-thumbnail">
       		<div class="wrap">
-      			<img class="sticky-background-image {{ project.thumbnail-size }}" src="{{ project.url | remove: "index.html" }}{{ project.thumbnail}}" />
+      			<img class="project-thumbnail-image {{ project.thumbnail-size }}" src="{{ project.url | remove: "index.html" }}{{ project.thumbnail}}" />
       		</div>
       	</span>
     </span>

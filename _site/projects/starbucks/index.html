@@ -1,46 +1,66 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—Starbucks</title>
 
 	<style>
 
-	body {
-		background: #000;
-		color: #fff;
-	}
-
-	.project-header, header {
-		background: #000;
+	.page-container {
+		background: #1F1E1B;
 		color: #fff;
 	}
 
 	
-	.project-header h2 {
-		color: #316239;
+
+	a {
+		border-color:#316239;
 	}
+
+	nav li.current a:after {
+      background-color:#316239;
+    }
+
+    .project-container .project-thumbnail {
+    	background-color:#316239;
+    }
+
+	h5:after {
+  		background:#316239;
+  	}
+
+  	.next a:hover {
+		color: #cc0000 ;
+	}
+
+	::selection {
+  		background:#316239;
+		color:white;
+		}
+
+	.next h5:after {
+  		background:#cc0000;
+  	}
 	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:#fff;
+  	}
 	</style>
 </head>
-<body class="no-jquery">
+
+
+<body class="no-jquery page-projects starbucks">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
@@ -49,47 +69,57 @@
     <li ><a href='/contact'>Contact</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
-</header>
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>Starbucks </h2>
-			<span class="text-small">Illustration, Interface Design</span>
-		</div>
-		<div class="pusher">
-		</div>
-	</div>
-</section>
 
-<section class="copy">
-	<h5 class="text-small caps">Souvenir Selfies</h5>
-	<h3>Times Square Photo Booth</h3>
+</header>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image " src="/projects/starbucks/starbucks-photobooth-01.jpg" />
+		</span>
+	</div>
+	<section class="lead">
+	<div class="wrap">
+	<h3>Starbucks</h3>
 	<p><em>Starbucks</em> wanted to update the <span class="highlight">Touch-Screen Photo Booth</span> in their Times Square flagship store with a custom-built solution that made it really quick & easy for visitors to take a souvenir selfie while they were waiting for their coffee.</p>
 
 	<p>I worked directly with Starbucks to design the UX and simple UI for this new photobooth.</p>
 
-	<p>Customer interaction with the updated photobooth has been 400% higher than the previous version.</p>
-</section>
-
-<section class="gallery dark">
-	<div class="ipad slider">
-		<div><img src="starbucks-photobooth-01.jpg" /></div>
-		<div><img src="starbucks-photobooth-02.jpg" /></div>
-		<div><img src="starbucks-photobooth-03.jpg" /></div>
-		<div><img src="starbucks-photobooth-04.jpg" /></div>
-		<div><img src="starbucks-photobooth-05.jpg" /></div>
+	<!-- <p>Customer interaction with the updated photobooth has been 400% higher than the previous version.</p> -->
 	</div>
 </section>
 
-<section class="copy">
-	<h5 class="text-small caps">Tasting Notes</h5>
-	<h3>Coffee Passport</h3>
-	<p><em>Starbucks</em> was working on a new digital version of their Coffee Passport, which allows partners and customers to keep a journal of tasting notes as they try all of the different available roasts, and unlock stamps as they go.</p>
+<section class="light">
+	<section>
+		<div class="wrap">	
+			<div class="copy">
+				<h5>Say Cheese!</h5>
+				<h3>Touchscreen Photobooth</h3>
+				<p>The goal of this project was to provide a fun memento of a customer's visit to the Times Square Starbucks Store, and ultimately, to capture an email for the Starbucks newsletter. We aimed to reduce as much friction as possible - a photo can be sent with as few as 4 total taps (not including typing an email address with an on-screen keyboard).</p>
+			</div>
+		</div>
+	</section>
 
-	<p>I helped with a few of the stamps, as well as few variations of an <span class="highlight">App&nbsp;Icon</span>, seen below.</p>
+	<section class="gallery">
+		<div class="ipad slider">
+			<div><img src="starbucks-photobooth-01.jpg" /></div>
+			<div><img src="starbucks-photobooth-02.jpg" /></div>
+			<div><img src="starbucks-photobooth-03.jpg" /></div>
+			<div><img src="starbucks-photobooth-04.jpg" /></div>
+			<div><img src="starbucks-photobooth-05.jpg" /></div>
+		</div>
+	</section>
+</section>
+
+<section>
+	<div class="wrap">	
+		<div class="copy">
+			<h5>Tasting Notes</h5>
+			<h3>Coffee Passport</h3>
+			<p><em>Starbucks</em> was working on a new digital version of their Coffee Passport, which allows partners and customers to keep a journal of tasting notes as they try all of the different available roasts, and unlock stamps as they go.</p>
+
+			<p>I helped with a few of the stamps, as well as few illustrations for an <span class="highlight">App&nbsp;Icon</span>, seen below.</p>
+		</div>
+	</div>
 </section>
 
 <section>
@@ -104,6 +134,7 @@
 		</div>
 	</div>
 </section>
+</div>
 
 
   
@@ -111,45 +142,25 @@
 
 
 <section class="next">
-<div>
-<div class="wrap">
-  <h5 class="text-small caps">Next</h5>
-  <h2><span class="project-link" style="color:#cc0000">
-      <a href="/projects/target/">
-          <span class="project-name"><span class="color-white">Target</span></span>
-          <span class="text-small">Interface Design for iPhone & iPad, Icon Illustration</span>
-      </a>
-      <span class="sticky-background">
-        <div class="wrap">
-          <img class="sticky-background-image big" src="/projects/target/target-ipad-icon-text.png" />
-        </div>
-      </span>
-    </span>
-  </h2>
-  </div>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:#cc0000">
+          <a class="project-wrap" href="/projects/target/">
+              <span class="project-name"><span class="color-text">Target</span></span>
+              <span class="project-categories">Interface Design for iPhone & iPad, Icon Illustration</span>
+          </a>
+        </span>
+      </h2>
+    </div>
   </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image big" src="/projects/target/target-ipad-icon-text.png" />
+  </div>
+</span>
 
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li class='current'><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li ><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
 
 
 <script>
@@ -175,31 +186,31 @@ $('.iphone.slider').slick({
   speed: 300,
   lazyload: 'ondemand',
   cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
 });
 
 $('.ipad.slider').slick({
@@ -216,5 +227,6 @@ $('.ipad.slider').slick({
 
 
 
+</div>
 </body>
 </html>

@@ -1,46 +1,66 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—Blix</title>
 
 	<style>
 
-	body {
-		background: #f0f0f0;
-		color: #000;
-	}
-
-	.project-header, header {
+	.page-container {
 		background: #f0f0f0;
 		color: #000;
 	}
 
 	
-	.project-header h2 {
-		color: #ff5500;
+
+	a {
+		border-color:#ff5500;
 	}
+
+	nav li.current a:after {
+      background-color:#ff5500;
+    }
+
+    .project-container .project-thumbnail {
+    	background-color:#ff5500;
+    }
+
+	h5:after {
+  		background:#ff5500;
+  	}
+
+  	.next a:hover {
+		color: #152753 ;
+	}
+
+	::selection {
+  		background:#ff5500;
+		color:white;
+		}
+
+	.next h5:after {
+  		background:#152753;
+  	}
 	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:#000;
+  	}
 	</style>
 </head>
-<body class="no-jquery">
+
+
+<body class="no-jquery page-projects blix">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
@@ -49,18 +69,19 @@
     <li ><a href='/contact'>Contact</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
+
 </header>
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>Blix </h2>
-			<span class="text-small">iPhone UX & UI, Web Design, Branding</span>
-		</div>
-		<div class="pusher">
-		</div>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image big" src="/projects/blix/blix-thumbnail.png" />
+		</span>
+	</div>
+	<section class="lead">
+	<div class="wrap">
+		<h3>Blix</h3>
+		<p><em>Blix</em> is an <span class="highlight">iPhone App</span> to help you keep track of places you've been, places you want to go, and places you don't want just anybody to know about.</p>
+		<p>I worked with the team to design the iPhone App. Later, I designed a logo, a brochure website, and several prototypes for a future desktop version of the app.</p>
 	</div>
 </section>
 
@@ -69,21 +90,23 @@
 	</div>
 </section>
 
-<section class="lead copy">
-	<h5 class="text-small caps">Project Overview</h5>
-	<h3>Remember & Share your Favorite Places</h3>
-	<p><em>Blix</em> is an <span class="highlight">iPhone App</span> to help you keep track of places you've been, places you want to go, and places you want to keep secret.</p>
-	<p>I worked with the team to rethink and redesign an existing prototype into a more usable and nicer looking iPhone App. Later, I designed a logo, a brochure website, and several prototypes for a future desktop version of the app.</p>
-</section>
-
-<section class="gallery">
-	<div class="iphone slider">
-		<div><img src="blix-signup.jpg" /></div>
-		<div><img src="blix-map.jpg" /></div>
-		<div><img src="blix-list-myblix.jpg" /></div>
-		<div><img src="blix-list-multiselect.jpg" /></div>
-		<div><img src="blix-search.jpg" /></div>
-		<div><img src="blix-search2.jpg" /></div>
+<section>
+	<section class="gallery">
+		<div class="iphone slider">
+			<div><img src="blix-list-myblix.jpg" /></div>
+			<div><img src="blix-list-multiselect.jpg" /></div>
+			<div><img src="blix-search.jpg" /></div>
+			<div><img src="blix-search2.jpg" /></div>
+			<div><img src="blix-signup.jpg" /></div>
+			<div><img src="blix-map.jpg" /></div>
+		</div>
+	</section>
+	<div class="wrap">
+		<div class="copy">
+			<h5>iPhone App</h5>
+			<h3>Save, Search & Tag</h3>
+			<p>Saving a new place is simple - move the map to a place you want to save</p>
+		</div>
 	</div>
 </section>
 
@@ -106,9 +129,9 @@
 <section>
 	<div class="half">
 		<div class="wrap">
-			<h5 class="text-small caps">Time for Some Prototypes</h5>
+			<h5>Time for Some Prototypes</h5>
 			<h3>Looking to larger screens</h3>
-			<p>While the initial design work for the iPhone app was wrapping up, we started thinking about how Blix might scale up to bigger screens, and I built an html prototype to help visualize this exploration.</p>
+			<p>While the initial design work for the iPhone app was wrapping up, we started thinking about how Blix might later scale up to bigger screens, and I built an html prototype to help visualize this exploration.</p>
 			<p><a class="desktop-only button" href="/projects/blix/blix2/">See the Prototype</a></p>
 		</div>
 	</div>
@@ -135,6 +158,7 @@
 	</div>
 </section>
 
+</div>
 
 
   
@@ -142,45 +166,25 @@
 
 
 <section class="next">
-<div>
-<div class="wrap">
-  <h5 class="text-small caps">Next</h5>
-  <h2><span class="project-link" style="color:#152753">
-      <a href="/projects/bluenile/">
-          <span class="project-name"><span class="color-white">Blue Nile</span></span>
-          <span class="text-small">UX & UI Design for iPhone</span>
-      </a>
-      <span class="sticky-background">
-        <div class="wrap">
-          <img class="sticky-background-image big" src="/projects/bluenile/bluenile-thumbnail.png" />
-        </div>
-      </span>
-    </span>
-  </h2>
-  </div>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:#152753">
+          <a class="project-wrap" href="/projects/bluenile/">
+              <span class="project-name"><span class="color-text">Blue Nile</span></span>
+              <span class="project-categories">UX & UI Design for iPhone</span>
+          </a>
+        </span>
+      </h2>
+    </div>
   </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image big" src="/projects/bluenile/bluenile-thumbnail.png" />
+  </div>
+</span>
 
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li class='current'><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li ><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
 
 
 <script>
@@ -206,31 +210,31 @@ $('.iphone.slider').slick({
   speed: 300,
   lazyload: 'ondemand',
   cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
 });
 
 $('.ipad.slider').slick({
@@ -247,5 +251,6 @@ $('.ipad.slider').slick({
 
 
 
+</div>
 </body>
 </html>

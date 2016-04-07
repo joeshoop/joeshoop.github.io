@@ -1,33 +1,68 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+	{% if page.collection %}
+		{% assign  document = site[the_collection]  %}
+	{% endif %}
+{% for links in document  %}
+	{% if links.title == page.title %}
+		{% if forloop.last == false %}
+			{% assign next = document[forloop.index] %}
+		{% endif %}
+		{% if forloop.last %}
+			{% assign next = document[0] %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>{{ site.title }}—{{ page.title }}</title>
 
 	<style>
 
-	body {
+	.page-container {
 		background: {{ page.color-bg }};
 		color: {{ page.color-text }};
 	}
 
-	.project-header, header {
-		background: {{ page.color-bg }};
-		color: {{ page.color-text }};
+	{% if page.color-brand-primary %}
+
+	a {
+		border-color:{{ page.color-brand-primary }};
 	}
 
-	{% if page.color-headline %}
-	.project-header h2 {
-		color: {{ page.color-headline }};
+	nav li.current a:after {
+      background-color:{{ page.color-brand-primary }};
+    }
+
+    .project-container .project-thumbnail {
+    	background-color:{{ page.color-brand-primary }};
+    }
+
+	h5:after {
+  		background:{{ page.color-brand-primary }};
+  	}
+
+  	.next a:hover {
+		color: {{ next.color-brand-primary }} ;
 	}
+
+	::selection {
+  		background:{{ page.color-brand-primary }};
+		color:white;
+		}
+
+	.next h5:after {
+  		background:{{ next.color-brand-primary }};
+  	}
 	{% endif %}
 
-	.next a:hover {
-		color: {{ next.color-headline }} ;
-	}
+	.color-text {
+    	color:{{ page.color-text }};
+  	}
 	</style>
 </head>

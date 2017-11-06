@@ -16,25 +16,23 @@
 {% endfor %}
 
 {% if next.url %}
-<style>
-.next.clicked {
-  background: {{ next.color-bg }};
-  color: {{ next.color-text }};
-}
-.next.clicked a h2 {
-  color: {{ next.color-headline }} ;
-}
-</style>
 <section class="next">
-	<a href="{{next.url}}">
-		<div class="wrap">
-			<div class="grid grid-align-middle">
-				<div class="col">
-					<h5 class="smallcaps">Next</h5>
-					<h2>{{next.title}}</h2>
-				</div>
-			</div>
-		</div>
-	</a>
+  <div>
+    <div class="wrap">
+      <h5>Next Project</h5>
+      <h2><span class="project-title" style="color:{{ next.color-headline }}">
+          <a class="project-wrap" href="{{ next.url | remove: "index.html" }}">
+              <span class="project-name"><span class="color-text">{{ next.title }}</span></span>
+              <span class="project-categories">{{ next.roles }}</span>
+          </a>
+        </span>
+      </h2>
+    </div>
+  </div>
 </section>
+ <span class="project-thumbnail">
+  <div class="wrap">
+    <img class="project-thumbnail-image {{ next.thumbnail-size }}" src="{{ next.url | remove: "index.html" }}{{ next.thumbnail}}" />
+  </div>
+</span>
 {% endif %}

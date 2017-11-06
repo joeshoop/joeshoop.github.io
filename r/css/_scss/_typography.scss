@@ -1,0 +1,165 @@
+
+
+@import "webfonts";
+
+@import "megatype";
+
+@include megatype;
+
+/*! Typebase.scss v0.1.0 | MIT License */
+
+
+@function exponent($base, $exponent) {
+  $value: $base;
+  @if $exponent > 1 {
+    @for $i from 2 through $exponent {
+      $value: $value * $base;
+    }
+  }
+  @if $exponent < 1 {
+    @for $i from 0 through -$exponent {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+@function modular-scale($scale-step) {
+    $value: ( 1rem * exponent($scale, ($scale-step - 1)));
+
+    @if $value <= ( $minimumFontSize / 16 ) {
+        $value: $minimumFontSize / 16 * 1rem;
+    }
+    @return $value;
+}
+
+@function ms($scale-step) {
+    $value: modular-scale($scale-step);
+    @return $value;
+}
+
+
+html {
+    font-family: $baseFontStack;
+    // font-size: $baseFontSize / 16 * 100%;
+    -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {     -webkit-font-smoothing: subpixel-antialiased; } 
+
+/* Copy & Lists */
+
+.text-size-0 {
+    @include typeset($sans, ms(0), 2, 1, 2);
+}
+
+.text-size-1 {
+    @include typeset($sans, ms(1), 2, 1, 1);
+}
+
+.text-size-2 {
+    @include typeset($sans, ms(1), 2, 1, 1);
+
+    @include min-width(2) {
+        font-weight:300;
+        @include typeset($sans, ms(2), 2, 1, 1);
+    }
+}
+
+.text-size-3 {
+    @include typeset($sans, ms(3), 3, 1, 1);
+}
+
+.text-size-4 {
+    @include typeset($sans, ms(4), 3, 1, 1);
+
+    @include min-width(2) {
+        @include typeset($sans, ms(5), 5, 1, 1);
+    }
+
+    @include min-width(4) {
+        @include typeset($sans, ms(6), 6, 1, 1);
+    }
+}
+
+p {
+    @extend .text-size-1;
+    font-weight:300;
+}
+
+.lead p {
+    @extend .text-size-2;
+}
+
+.text-small {
+    @include typeset($monospace, 10px, 1, 1, 2);
+    font-family:$monoFontStack;
+    color:currentColor;
+    font-weight:600;
+}
+
+.caps {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.highlight {
+  font-weight:400;
+}
+
+ul,
+ol {
+}
+
+.project-categories, label {
+  @extend .text-small;
+}
+
+input, textarea {
+    @extend .text-size-2;
+}
+
+.submit {
+    font-family:$headerFontStack;
+    font-weight:bold;
+}
+
+// Headings
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $headerFontStack;
+}
+
+h2 {
+    @extend .text-size-4;
+}
+h3 {
+    @extend .text-size-3;
+}
+
+h5 {
+    @extend .text-small;
+    @extend .caps;
+    position:relative;
+    display:inline-block;
+
+    &:after {
+        content:"";
+        position:absolute;
+        left:100%;
+        margin-left:1em;
+        transform:translateY(-50%);
+        top:50%;
+        width:2rem;
+        height:2px;
+        background:currentColor;
+    }
+}
+
+.hug {
+    margin-top: 0;
+}

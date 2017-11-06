@@ -6,7 +6,6 @@ sass:
 collections:
   projects:
     output: true
-    permalink: /work/:title/
 
 defaults:
   -
@@ -14,3 +13,5 @@ defaults:
       path: ""
     values:
       layout: "project"
+
+exclude: [Gemfile,Gemfile.lock]

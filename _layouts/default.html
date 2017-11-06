@@ -1,18 +1,18 @@
 <html>
-
 {% include head.html %}
-
-<body>
-<div id="main" class="m-scene">
-
-	{% include header.html %}
-
-	<section class="content scene-element">
-		{{ content }}
-	</section>
-
-	{% include footer.html %}
-
+{% assign current = page.url | downcase | split: '/' %}
+{% if page.url == "/"  %}
+	{% assign page-class = 'home' %}
+{% else %}
+	{% assign page-name = page.url | downcase | remove: 'projects' | remove: 'index.html' | split: '/' %} 
+	{% assign page-type = current[1] %}
+{% endif %}
+<body class="no-jquery page-{{ page-type }} {{ page-name }}">
+<div class="page-container">
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+{% include scripts.html %}
 </div>
 </body>
 </html>

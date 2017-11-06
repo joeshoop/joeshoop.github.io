@@ -1,3 +1,245 @@
+{% assign current = page.url | downcase | split: '/' %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2543759-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="/r/js/jquery.smoothState.js"></script>
-<script src="/r/js/smoothState-functions.js"></script>
+<script>$('body').removeClass('no-jquery');</script>
+
+{% if current[1] == 'projects' %}
+<script type="text/javascript" src="/r/js/slick.min.js"></script>
+<script>
+
+$('.iphone.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  lazyload: 'ondemand',
+  cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
+});
+
+$('.ipad.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
+
+</script>
+{% endif %}
+
+{% if current[1] == 'contact' %}
+
+<script type="text/javascript">
+function shouldBeValidated(field)
+{
+  return (
+    !(field.getAttribute('disabled') || field.disabled)
+    &&
+    (
+      field.getAttribute('pattern')
+      ||
+      field.getAttribute('required')
+    )
+  ); 
+}
+
+$("form [required]").on("input keyup paste", function() {
+
+  if (shouldBeValidated(this)) {
+    var valid = 
+    (
+        this.getAttribute('pattern') 
+        && 
+        this.value 
+        && 
+        new RegExp(this.getAttribute('pattern')).test(this.value)
+    );
+
+    if(!valid && this.getAttribute('valid'))
+      {
+        this.removeAttribute('valid');
+      }
+      else if(valid && !this.getAttribute('valid'))
+      {
+        this.setAttribute('valid', 'true');
+      }
+    console.log(valid);
+  }
+
+  // If every required element is valid, the whole form is valid, so enable the submit button
+  if ($("form [required]").length == $("form [required][valid]").length) {
+    $('.submit').prop('disabled', false);
+  } else {
+    $('.submit').prop('disabled', true);
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  // (function()
+  // {
+        
+  //   //add event construct for modern browsers or IE
+  //   //which fires the callback with a pre-converted target reference
+  //   function addEvent(node, type, callback)
+  //   {
+  //     if(node.addEventListener)
+  //     {
+  //       node.addEventListener(type, function(e)
+  //       {
+  //         callback(e, e.target);
+          
+  //       }, false);
+  //     }
+  //     else if(node.attachEvent)
+  //     {
+  //       node.attachEvent('on' + type, function(e)
+  //       {
+  //         callback(e, e.srcElement);
+  //       });
+  //     }
+  //   }
+    
+    
+  //   //identify whether a field should be validated
+  //   //ie. true if the field is neither readonly nor disabled, 
+  //   //and has either "pattern", "required" or "aria-invalid"
+  //   function shouldBeValidated(field)
+  //   {
+  //     return (
+  //       !(field.getAttribute('readonly') || field.readonly)
+  //       &&
+  //       !(field.getAttribute('disabled') || field.disabled)
+  //       &&
+  //       (
+  //         field.getAttribute('pattern')
+  //         ||
+  //         field.getAttribute('required')
+  //       )
+  //     ); 
+  //   }
+    
+    
+  //   //field testing and validation function
+  //   function instantValidation(field)
+  //   {
+  //     //if the field should be validated
+  //     if(shouldBeValidated(field))
+  //     {
+  //       //the field is invalid if: 
+  //       //it's required but the value is empty 
+  //       //it has a pattern but the (non-empty) value doesn't pass
+  //       var invalid = 
+  //       (
+  //         (field.getAttribute('required') && !field.value)
+  //         ||
+  //         (
+  //           field.getAttribute('pattern') 
+  //           && 
+  //           field.value 
+  //           && 
+  //           !new RegExp(field.getAttribute('pattern')).test(field.value)
+  //         )
+  //       );
+    
+  //       //add or remove the attribute is indicated by 
+  //       //the invalid flag and the current attribute state
+  //       if(!invalid && field.getAttribute('aria-invalid'))
+  //       {
+  //         field.removeAttribute('aria-invalid');
+  //       }
+  //       else if(invalid && !field.getAttribute('aria-invalid'))
+  //       {
+  //         field.setAttribute('aria-invalid', 'true');
+  //       }
+  //     }
+  //   }
+    
+    
+  //   //now bind a delegated change event 
+  //   //== THIS FAILS IN INTERNET EXPLORER <= 8 ==//
+  //   //addEvent(document, 'change', function(e, target) 
+  //   //{ 
+  //   //  instantValidation(target); 
+  //   //});
+    
+    
+  //   //now bind a change event to each applicable for field
+  //   var fields = [
+  //     document.getElementsByTagName('input'), 
+  //     document.getElementsByTagName('textarea')
+  //     ];
+  //   for(var a = fields.length, i = 0; i < a; i ++)
+  //   {
+  //     for(var b = fields[i].length, j = 0; j < b; j ++)
+  //     {
+  //       addEvent(fields[i][j], 'change', function(e, target)
+  //       {
+  //         instantValidation(target);
+  //       });
+  //     }
+  //   }
+    
+    
+  // })();
+  </script>
+
+
+<script>
+// Input Label Stuff
+$(function(){
+  var onClass = "on";
+  var showClass = "show";
+  
+  $("input, textarea").bind("checkval",function(){
+    var label = $(this).prev("label");
+    if(this.value !== ""){
+      label.addClass(showClass);
+    } else {
+      label.removeClass(showClass);
+    }
+  }).on("keyup",function(){
+    $(this).trigger("checkval");
+  }).on("focus",function(){
+    $(this).prev("label").addClass(onClass);
+  }).on("blur",function(){
+      $(this).prev("label").removeClass(onClass);
+  }).trigger("checkval");
+});
+</script>
+{% endif %}

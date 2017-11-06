@@ -1,0 +1,38 @@
+#main {
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: $animation-timing-function;
+  animation-duration: 1s;
+}
+
+.is-exiting .project-content, .is-exiting header {
+  animation-direction:reverse;
+}
+
+@keyframes projectThumbnailIn {
+    0% {
+      left:0;
+    }
+    100% {
+      left:50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+      transform:translateY(2rem);
+    }
+    100% {
+      opacity:100%;
+      transform:translateY(0);
+    }
+}
+
+.is-exiting {
+
+  .project-thumbnail {
+    background:rgba(0,0,0,1);
+  }
+}
+

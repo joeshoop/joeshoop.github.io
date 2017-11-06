@@ -1,20 +1,44 @@
-$color-tint: #fff;
-$color-primary: #F1BA05;
+$color-primary: #1FC3E1;
 
-$color-body-bg: white;
-$color-body-text: black;
-$color-body-link: $color-primary;
-
-$color-footer-bg: black;
-$color-footer-text: white;
-$color-footer-link: $color-primary;
-
-
-$color-tint-contrast-min: if(lightness($color-tint) < 80%, white, darken($color-tint, 75%));
-$color-tint-contrast-max: if(lightness($color-tint) < 35%, white, darken($color-tint, 100%));
-
-$type-l: 1.5em;
-$site-max-width: 85rem;
+$site-max-width: 80rem;
 
 $break-medium: "min-width:62rem";
 $break-small: "min-width:48rem";
+
+$spacing: 1.5rem;
+
+$animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+
+// Typography
+
+$baseFontStack:"Roboto", "Helvetia Neue", Helvetica, Arial, sans-serif;
+$headerFontStack:"Campton-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monoFontStack:"Roboto Mono", "Courier New", Courier, mono;
+
+$baseFontSize:18; // in px
+$baseLineHeight:1.5;
+$leading:$baseLineHeight * 1rem;
+$minimumFontSize:10; // in px
+
+$scale:1.414;
+$mobile-scale: 1.25;
+
+// Breakpoints
+
+// $breakpoint-map: (
+//     0: (
+//         start:      0em,
+//         max:        48em,
+//         rootsize:   14px
+//     ),
+//     1: (
+//         start:      48em,
+//         max:        62em,
+//         rootsize:   16px
+//     ),
+//     2: (
+//         start:      62em,
+//         max:        100em,
+//         rootsize:   18px
+//     )
+// );

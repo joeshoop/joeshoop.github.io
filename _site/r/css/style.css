@@ -707,7 +707,10 @@ body {
   overflow-y: scroll; }
 
 .page-container {
-  margin: 1rem; }
+  min-height: 100%; }
+  @media (min-width: 48rem) {
+    .page-container {
+      margin: 1rem; } }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -753,7 +756,8 @@ a {
       display: flex;
       align-items: flex-end;
       padding: 6rem 0 3rem 0;
-      width: 50%; } }
+      width: 50%;
+      min-width: 35rem; } }
   @media (min-width: 48rem) {
     .page-projects .lead {
       min-height: calc(100vh - 1rem); } }

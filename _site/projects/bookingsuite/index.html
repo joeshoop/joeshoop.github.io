@@ -1,69 +1,54 @@
 <html>
+
+	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="/r/images/favicon.ico">
 	<link rel="stylesheet" href="/r/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Mono' rel='stylesheet' type='text/css'>
 
 	<title>Joe Shoop—Booking Suite</title>
 
 	<style>
 
-	body {
-		background: #001A47;
-		color: #fff;
-	}
-
-	.project-header, header {
+	.page-container {
 		background: #001A47;
 		color: #fff;
 	}
 
 	
-	.project-header h2 {
-		color: #12ABE4;
-	}
-	
 
-	.next a:hover {
-		color:  ;
-	}
+	.color-text {
+    	color:#fff;
+  	}
 	</style>
 </head>
-<body>
+
+
+<body class="no-jquery page-projects bookingsuite">
+<div class="page-container">
 <header class="header-bar">
-	<div class="wrap">
-		<section class="header-container">
-			<div>
-				<p class="home"><a href="/">Joe Shoop</a></p>
-			</div>
-			<div class="right-sm">
-				
 
 <nav>
   <ul>
     <li class='current'><a href='/'>Work</a></li>
     <li ><a href='/about'>About</a></li>
     <li ><a href='/contact'>Contact</a></li>
+    <li ><a href='/playground'>Playground</a></li>
   </ul>
 </nav>
-			</div>
-		</section>
-	</div>
-</header>
-<section class="project-header">
-	<div>
-		<div class="wrap">
-			<h2>Booking Suite </h2>
-			<span class="text-small">Product Design, Front-End</span>
-		</div>
-		<div class="pusher">
-		</div>
-	</div>
-</section>
 
-<section class="lead copy">
+</header>
+<div class="project-container">
+	<div class="project-header">
+		<span class="project-thumbnail">
+			<img class="project-thumbnail-image " src="/projects/bookingsuite/" />
+		</span>
+	</div>
+	<section class="lead copy">
 	<h5 class="text-small caps">Project Overview</h5>
 	<p><em>Booking Suite</em> is a part of Booking.com. They make software for hotels - to help manage bookings and reservations, and for create and managing a website.</p>
 	<p>While there, I was involved with two big projects - one was a update to their CMS, called 'Back Office' internally. Lots of front end using scss.</p>
@@ -87,47 +72,21 @@
 	<p>Terminus Towels</p>
 </section>
 
+</div>
 
 
-  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-2543759-2', 'auto');
+  ga('send', 'pageview');
 
-
-<section class="next">
-  <a href="/projects/clipcard/">
-    <div>
-        <div class="wrap">
-            <h5 class="text-small caps">Next</h5>
-            <h2>ClipCard</h2>
-        </div>
-    </div>
-  </a>
-</section>
-
-<footer>
-	<div class="wrap">
-		<section>
-			<div>
-				
-
-<nav>
-  <ul>
-    <li class='current'><a href='/'>Work</a></li>
-    <li ><a href='/about'>About</a></li>
-    <li ><a href='/contact'>Contact</a></li>
-  </ul>
-</nav>
-			</div>
-			<div>
-				<p class="right-sm">Available for Freelance & Contract Projects. <a href="/contact">Get&nbsp;in&nbsp;touch.</a></p>
-			</div>
-		</section>
-	</div>
-</footer>
-
-
-
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>$('body').removeClass('no-jquery');</script>
 
 
 <script type="text/javascript" src="/r/js/slick.min.js"></script>
@@ -139,31 +98,31 @@ $('.iphone.slider').slick({
   speed: 300,
   lazyload: 'ondemand',
   cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 1550,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 700,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
 });
 
 $('.ipad.slider').slick({
@@ -180,5 +139,6 @@ $('.ipad.slider').slick({
 
 
 
+</div>
 </body>
 </html>

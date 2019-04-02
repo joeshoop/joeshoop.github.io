@@ -1,17 +1,23 @@
-title: "Joe Shoop"
-
-sass:
-    sass_dir: /r/css/_scss/
-
+---
+title: Joe Shoop
+timezone: America/Los_Angeles
 collections:
-  projects:
+  posts:
+    title: Posts
     output: true
-
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "project"
-
-exclude: [Gemfile,Gemfile.lock]
+- scope:
+    path: ''
+  values:
+    layout: project
+sass:
+  sass_dir: "/r/css/_scss/"
+exclude:
+- Gemfile
+- Gemfile.lock

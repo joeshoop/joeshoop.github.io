@@ -199,17 +199,17 @@ html {
   -webkit-font-smoothing: subpixel-antialiased; }
 /* Copy & Lists */
 .text-size-0 {
-  font-size: 0.70721rem;
+  font-size: 0.7072135785rem;
   line-height: 2.828;
   position: relative;
-  top: 0.74894rem;
+  top: 0.7489391796rem;
   margin-bottom: 2rem; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .text-size-0 {
       line-height: 2rem; } }
   .text-size-0, .text-size-0 a {
     background-position: 0 25px;
-    background-position: 0 calc(50% + 25.29844px); }
+    background-position: 0 calc(50% + 25.2984441301px); }
 
 .text-size-1, p {
   font-size: 1rem;
@@ -240,7 +240,7 @@ html {
     .text-size-2, .lead p, input, textarea {
       font-weight: 300;
       font-size: 1.414rem;
-      line-height: 1.41443;
+      line-height: 1.414427157;
       position: relative;
       top: 0.49803rem;
       margin-bottom: 1rem; } }
@@ -253,36 +253,36 @@ html {
         background-position: 0 calc(50% + 32.59248px); } }
 
 .text-size-3, h3 {
-  font-size: 1.9994rem;
-  line-height: 1.50045;
+  font-size: 1.999396rem;
+  line-height: 1.5004531368;
   position: relative;
-  top: -0.20979rem;
+  top: -0.20978558rem;
   margin-bottom: 0; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .text-size-3, h3 {
       line-height: 3rem; } }
   .text-size-3, h3, .text-size-3 a, h3 a {
     background-position: 0 47px;
-    background-position: 0 calc(50% + 46.63377px); }
+    background-position: 0 calc(50% + 46.63376672px); }
 
 .text-size-4, h2 {
-  font-size: 2.82715rem;
-  line-height: 1.06114;
+  font-size: 2.827145944rem;
+  line-height: 1.0611408323;
   position: relative;
-  top: 0.49636rem;
+  top: 0.4963631899rem;
   margin-bottom: 1rem; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .text-size-4, h2 {
       line-height: 3rem; } }
   .text-size-4, h2, .text-size-4 a, h2 a {
     background-position: 0 55px;
-    background-position: 0 calc(50% + 55.17615px); }
+    background-position: 0 calc(50% + 55.1761461421px); }
   @media (min-width: 48em) {
     .text-size-4, h2 {
-      font-size: 3.99758rem;
-      line-height: 1.25076;
+      font-size: 3.9975843648rem;
+      line-height: 1.2507553422;
       position: relative;
-      top: 0.08086rem;
+      top: 0.0808575505rem;
       margin-bottom: 0; } }
   @media screen and (min-width: 48em) and (-webkit-min-device-pixel-ratio: 0) {
     .text-size-4, h2 {
@@ -290,13 +290,13 @@ html {
   @media (min-width: 48em) {
       .text-size-4, h2, .text-size-4 a, h2 a {
         background-position: 0 83px;
-        background-position: 0 calc(50% + 83.25507px); } }
+        background-position: 0 calc(50% + 83.2550706449px); } }
   @media (min-width: 80em) {
     .text-size-4, h2 {
-      font-size: 5.65258rem;
-      line-height: 1.06146;
+      font-size: 5.6525842918rem;
+      line-height: 1.0614613936;
       position: relative;
-      top: -0.00667rem;
+      top: -0.0066674236rem;
       margin-bottom: 0; } }
   @media screen and (min-width: 80em) and (-webkit-min-device-pixel-ratio: 0) {
     .text-size-4, h2 {
@@ -304,7 +304,7 @@ html {
   @media (min-width: 80em) {
       .text-size-4, h2, .text-size-4 a, h2 a {
         background-position: 0 135px;
-        background-position: 0 calc(50% + 134.91834px); } }
+        background-position: 0 calc(50% + 134.9183373649px); } }
 
 p {
   font-weight: 300; }
